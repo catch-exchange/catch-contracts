@@ -1,0 +1,16 @@
+.DS_Store
+node_modules/
+.env*
+out/
+cache/
+dist/
+.tools/
+.idea/
+.vscode/
+*.log
+*.pem
+*.key
+*.keystore
+broadcast/
+deployments/*private*/
+verification-recovery-*.json

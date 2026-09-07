@@ -1,0 +1,8 @@
+# Preserve exact source/compiler-input bytes on every platform.
+src/** -text
+lib/** -text
+verification/** -text
+abi/** -text
+*.md text eol=lf
+*.mjs text eol=lf
+*.yml text eol=lf

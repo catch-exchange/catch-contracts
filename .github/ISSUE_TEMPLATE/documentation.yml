@@ -1,0 +1,21 @@
+name: Documentation or reproduction issue
+description: Report a public-source documentation, identity-reference or build problem.
+title: '[Source] '
+body:
+  - type: markdown
+    attributes:
+      value: 'For vulnerabilities, use private reporting. Never paste keys, RPC credentials, signatures or unpublished launch data.'
+  - type: input
+    id: revision
+    attributes:
+      label: Source revision or release
+      description: Include the public commit/tag and relevant public file.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Expected and observed behavior
+      description: Give sanitized steps. For a deployed identity, include chain ID and public address.
+    validations:
+      required: true

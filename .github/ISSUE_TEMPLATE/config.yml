@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability privately
+    url: https://github.com/catch-exchange/catch-contracts/security/advisories/new
+    about: Do not disclose live exploits, credentials or private launch material in a public issue.
+  - name: Catch user guides
+    url: https://catch.exchange/docs
+    about: Understand purchases, redemption, reserves and dependencies.

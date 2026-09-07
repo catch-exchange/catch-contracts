@@ -1,0 +1,65 @@
+name: Verify public source
+
+on:
+  push:
+    branches: [main]
+    tags: ['source-v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-source-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  integrity:
+    name: Package integrity
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - run: npm run check
+      - run: npm test
+
+  reproduce:
+    name: Reproducible compilation
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Verify and install the pinned compiler
+        run: node scripts/download-tool.mjs solc "$RUNNER_TEMP/catch-public-tools"
+      - name: Reproduce all eight compilation targets
+        run: SOLC="$RUNNER_TEMP/catch-public-tools/solc" npm run reproduce
+
+  secrets:
+    name: Secret scan
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Verify and install the pinned scanner
+        run: node scripts/download-tool.mjs gitleaks "$RUNNER_TEMP/catch-public-tools"
+      - name: Scan complete history and current files
+        run: |
+          "$RUNNER_TEMP/catch-public-tools/gitleaks" git --redact=100 --no-banner --log-opts="--all" .
+          "$RUNNER_TEMP/catch-public-tools/gitleaks" dir --redact=100 --no-banner .

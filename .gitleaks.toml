@@ -1,0 +1,16 @@
+title = "Catch public source — default detection with one reviewed checksum exception"
+
+[extend]
+useDefault = true
+
+# This exact manifest entry is the independently recomputed SHA-256 of the
+# vendored PoolKey.sol source, not an API credential. Do not allowlist a directory,
+# arbitrary digest, commit or general key pattern.
+[[rules]]
+id = "generic-api-key"
+  [[rules.allowlists]]
+  description = "Exact PoolKey.sol source-file checksum in the frozen manifest"
+  condition = "AND"
+  paths = ['''^verification/build-manifest\.json$''']
+  regexTarget = "line"
+  regexes = ['''^\s*"lib/v4-core/src/types/PoolKey\.sol": "99e1afe285b5c614ebc9586ab5196db9d24a63fd924a449f5d99f490a6a6d6a9",?\s*$''']

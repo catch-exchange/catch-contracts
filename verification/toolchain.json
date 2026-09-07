@@ -1,0 +1,29 @@
+{
+  "schema": "catch.public-toolchain.v1",
+  "solc": {
+    "version": "0.8.26+commit.8a97fa7a",
+    "linux-x64": {
+      "url": "https://binaries.soliditylang.org/linux-amd64/solc-linux-amd64-v0.8.26+commit.8a97fa7a",
+      "sha256": "d5f23436f443edb85d8e76906d12f0a86ce0490e7663a9e608efeb7a93f149ef"
+    },
+    "darwin-arm64": {
+      "url": "https://binaries.soliditylang.org/macosx-amd64/solc-macosx-amd64-v0.8.26+commit.8a97fa7a",
+      "sha256": "0ff016aef2396b12d1fc65429d8ea6cf53c2ee4b041bb8925644615ee1c30ab9"
+    },
+    "darwin-x64": {
+      "url": "https://binaries.soliditylang.org/macosx-amd64/solc-macosx-amd64-v0.8.26+commit.8a97fa7a",
+      "sha256": "0ff016aef2396b12d1fc65429d8ea6cf53c2ee4b041bb8925644615ee1c30ab9"
+    }
+  },
+  "gitleaks": {
+    "version": "8.30.1",
+    "linux-x64": {
+      "url": "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz",
+      "sha256": "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb"
+    },
+    "darwin-arm64": {
+      "url": "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_darwin_arm64.tar.gz",
+      "sha256": "b40ab0ae55c505963e365f271a8d3846efbc170aa17f2607f13df610a9aeb6a5"
+    }
+  }
+}

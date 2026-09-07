@@ -1,0 +1,714 @@
+{
+  "schema": "catch.reproducible-compiler-inputs.v1",
+  "compiler": "0.8.26+commit.8a97fa7a",
+  "hashEncoding": "SHA-256 of the lowercase hexadecimal bytecode string, without 0x; input SHA-256 is over exact file bytes",
+  "runtimeScope": "Runtime templates have unresolved constructor immutables. Template hashes are NOT deployed runtime code hashes.",
+  "sources": {
+    "lib/v4-core/src/interfaces/callback/IUnlockCallback.sol": "2e4a514730654da2e08a82eff5b3eabae12dc1c6198951396e1d466d4c0e223e",
+    "lib/v4-core/src/interfaces/external/IERC20Minimal.sol": "5e966a2d22b3b234a56af4b17e36bf7be90f9b29b1ddb6a15bfefc0b6dab4282",
+    "lib/v4-core/src/interfaces/external/IERC6909Claims.sol": "1cd65496c829036bc6aee67bc71363ab5fb6989c65e793087d0e1e2379f7d7d8",
+    "lib/v4-core/src/interfaces/IExtsload.sol": "9421ef4ba198d94058cd9a4c9fd2d663c61fc682f7dafa449a873456853f0025",
+    "lib/v4-core/src/interfaces/IExttload.sol": "c21643d2c7f48d2d2407438a64a3ff0f376324cf6a0c62608977713652308c9e",
+    "lib/v4-core/src/interfaces/IHooks.sol": "6eb35c9c598eb932e963219f1ff180748bc4c30ac6a02d924893b3c29abb1d73",
+    "lib/v4-core/src/interfaces/IPoolManager.sol": "a98405333567e4ab344489728014795721cf0071c151536377d2fcc986e0600c",
+    "lib/v4-core/src/interfaces/IProtocolFees.sol": "807d68adea106ec2aa51a8009155de09ebfe09e1ee7053d5a5ae448d7e840654",
+    "lib/v4-core/src/libraries/BitMath.sol": "e8a45eb3d57f9427fc47bbb2543c1a6a5f394113b378123ac7ca9f113a7502b4",
+    "lib/v4-core/src/libraries/CustomRevert.sol": "9d3dbe6b742cb1ac30f57df89d879ade9649389de1165fc637114bd062d39fca",
+    "lib/v4-core/src/libraries/Hooks.sol": "297d577998cdede64d48b47b12f15e4f442eea032fbb9676bb3c2f89da89b83c",
+    "lib/v4-core/src/libraries/LPFeeLibrary.sol": "e96c3fa7deac991dc09b6c5e560a340d01d6c68ccba483d4b29f8a66e5aa44e0",
+    "lib/v4-core/src/libraries/ParseBytes.sol": "6a6f3d1cec0143fd70ea68c34e6dce3bde72f368b213f1a225ada23dbfd99bb8",
+    "lib/v4-core/src/libraries/SafeCast.sol": "c1a815a41607be5b4c86ca588a951f368156da8ee21bdfc18b5d51b58a0f27be",
+    "lib/v4-core/src/libraries/TickMath.sol": "272d4f6d3ff9ae33596ebcdb84a71a3c2d4542ae8fb5c88ddf1aca8043f5d06b",
+    "lib/v4-core/src/types/BalanceDelta.sol": "320d9c13dec135c3903729e66d3a1040fe86d537a7ee53728915012ca183af32",
+    "lib/v4-core/src/types/BeforeSwapDelta.sol": "6aee06f1553e879f5909e8f4c0eac26ec23dd4821a7e56e4d5077db39a227e12",
+    "lib/v4-core/src/types/Currency.sol": "ba6726fd24fbc66848208dfbb2899116c10729c505e6e5552316ac2444f1dfc3",
+    "lib/v4-core/src/types/PoolId.sol": "548424ac50ad58212545da70207283fb8990731578c115c85d5acbcb0e1d3c9f",
+    "lib/v4-core/src/types/PoolKey.sol": "99e1afe285b5c614ebc9586ab5196db9d24a63fd924a449f5d99f490a6a6d6a9",
+    "lib/v4-core/src/types/PoolOperation.sol": "cf72ad0c3e5e91662029e862acd841fabce8753040b0d4e802dee64ef1157232",
+    "src/CatchAsset.sol": "6a8897680dcd23e1a49d8a4e75a37be13420acd39406d1d354fa240bb9d8798a",
+    "src/CatchAssetEmissionVault.sol": "485de80a3f06af672a660e1be3c8675ca890bd32369db710e67f6a43099fb75b",
+    "src/CatchAssetReserveVault.sol": "2c8ee3c18d1de40e00a13e4412abf2a132d78454adbc3a97afd26cbfc3e9f739",
+    "src/interfaces/ICatchAsset.sol": "89991a573e442d2654abda08ce493980d09be6c1c9a4278d7a863862b4ba208d",
+    "src/interfaces/ICatchAssetEmissionVault.sol": "d0b50c9750d6bed9fe22b8b69f33bccf76ca8bb10b364117272b26f56d391ba6",
+    "src/interfaces/IERC20Minimal.sol": "7011842e2fcf2b051d8f82e2ded139de840084eed0dd60beeefb2be73aff350e",
+    "src/libraries/FullMath.sol": "f75321ea5738c2f038ccad497322079ca3189c0b1a59833891c6ac52928508c0",
+    "src/SafeTransferLib.sol": "22acdf9b5e5a711c6cc63ff7914872057ccf2fffb9b47709c9614647073135ac",
+    "src/vnext/CatchFamilyFactoryV1.sol": "523bc0be696da6cd28af35778a69d95cae5e52ccd87c385a1659515d32678125",
+    "src/vnext/CatchFamilyFeeLedgerV1.sol": "e620aaf56608a15b0733f7c676f83877668ea9d74d0b0ac1ae1889af2296c1f9",
+    "src/vnext/CatchFamilyHookV1.sol": "d0522978c1eb6dd9691dba39a043138ce1c2ad916fe610aeb94da4adb34296d4",
+    "src/vnext/CatchFamilyLiquidityLockerV1.sol": "ee83f9545a83106d0b6bebf6d4e24b4daffb3aea4a8721b47bc0873681500612",
+    "src/vnext/CatchFamilyReleaseControllerV1.sol": "495a61795c9db030ea1ad60cedaaae50b0b4086b20da130cd161d394173ecc43",
+    "src/vnext/interfaces/ICatchFamilyFeeLedgerV1.sol": "4d9cdc835161e560b84b8aae9ffb4fefec37444b364ca767d472293e960f03d3",
+    "src/vnext/libraries/CatchFamilyReleaseCurveV1.sol": "8e30adaa58b478e36188d0372b2c49c2eb95d865cd8226e69963af780a80672c"
+  },
+  "targets": [
+    {
+      "role": "cAsset",
+      "source": "src/CatchAsset.sol",
+      "contract": "CatchAsset",
+      "input": "verification/cAsset.standard-input.json",
+      "inputSha256": "510a7671432c5107dbb58d055e1e733ddd6d4682c9e865620225466ae3d538a9",
+      "creationBytecodeSha256": "44a5eb657dd05f7dd96b2cdf180f2c2f144dcf88ad850a080f85e4b5952032bc",
+      "runtimeTemplateSha256": "53e3bc439188d0b5780ecbf12be5f0c1c3707b1e2cd9158d3dd1c25c7b217e93",
+      "immutableReferences": {
+        "27": [
+          {
+            "length": 32,
+            "start": 352
+          },
+          {
+            "length": 32,
+            "start": 1210
+          }
+        ]
+      }
+    },
+    {
+      "role": "releaseVault",
+      "source": "src/CatchAssetEmissionVault.sol",
+      "contract": "CatchAssetEmissionVault",
+      "input": "verification/releaseVault.standard-input.json",
+      "inputSha256": "a9a50848f1225f2076bbe3e5fd008a18baa10733da1db598893b83f178f21b02",
+      "creationBytecodeSha256": "b96710f308b52f50f74daf48242c924c8a1c32b6ed1521e46b55ebeba22033c5",
+      "runtimeTemplateSha256": "6be692f853691e479aa631da7ade44a0e8b0711d0ab41b07482fdc3a23b9b0ea",
+      "immutableReferences": {
+        "12": [
+          {
+            "length": 32,
+            "start": 392
+          },
+          {
+            "length": 32,
+            "start": 800
+          }
+        ],
+        "14": [
+          {
+            "length": 32,
+            "start": 324
+          },
+          {
+            "length": 32,
+            "start": 466
+          }
+        ]
+      }
+    },
+    {
+      "role": "reserveVault",
+      "source": "src/CatchAssetReserveVault.sol",
+      "contract": "CatchAssetReserveVault",
+      "input": "verification/reserveVault.standard-input.json",
+      "inputSha256": "0ff31821d1dad4a0ce5ac00e243f5e3b80e07ca69e6fd4522ce8c69e1f7fa776",
+      "creationBytecodeSha256": "afb7ba0f3285f423b7e6b0167482138485a876bd64002a4baa3457d8954b6530",
+      "runtimeTemplateSha256": "7d7cd9cf8201204f2291abfb2336dac020f3bb2ed1d56f4bffb8f52ac4844cb3",
+      "immutableReferences": {
+        "16": [
+          {
+            "length": 32,
+            "start": 320
+          },
+          {
+            "length": 32,
+            "start": 568
+          },
+          {
+            "length": 32,
+            "start": 1914
+          }
+        ],
+        "19": [
+          {
+            "length": 32,
+            "start": 251
+          },
+          {
+            "length": 32,
+            "start": 1993
+          }
+        ],
+        "21": [
+          {
+            "length": 32,
+            "start": 182
+          },
+          {
+            "length": 32,
+            "start": 481
+          },
+          {
+            "length": 32,
+            "start": 1728
+          }
+        ]
+      }
+    },
+    {
+      "role": "hook",
+      "source": "src/vnext/CatchFamilyHookV1.sol",
+      "contract": "CatchFamilyHookV1",
+      "input": "verification/hook.standard-input.json",
+      "inputSha256": "662e384c1f05a56f92777710309f51c55d5fadbbbdb68977946889c710d53361",
+      "creationBytecodeSha256": "00e1363c0cd7c5c6cb9551cc72902ebd3fa8070e60941e7ac0ce7b55f4125c0f",
+      "runtimeTemplateSha256": "84e927c8b524690eb04461618c640fe702619bb805bd7af47fb769646acbed1f",
+      "immutableReferences": {
+        "3290": [
+          {
+            "length": 32,
+            "start": 486
+          },
+          {
+            "length": 32,
+            "start": 697
+          },
+          {
+            "length": 32,
+            "start": 2878
+          },
+          {
+            "length": 32,
+            "start": 3105
+          },
+          {
+            "length": 32,
+            "start": 3846
+          },
+          {
+            "length": 32,
+            "start": 5753
+          }
+        ],
+        "3292": [
+          {
+            "length": 32,
+            "start": 1448
+          },
+          {
+            "length": 32,
+            "start": 2432
+          },
+          {
+            "length": 32,
+            "start": 3170
+          },
+          {
+            "length": 32,
+            "start": 3641
+          },
+          {
+            "length": 32,
+            "start": 4863
+          },
+          {
+            "length": 32,
+            "start": 5147
+          }
+        ],
+        "3294": [
+          {
+            "length": 32,
+            "start": 1691
+          },
+          {
+            "length": 32,
+            "start": 1763
+          },
+          {
+            "length": 32,
+            "start": 4031
+          }
+        ],
+        "3296": [
+          {
+            "length": 32,
+            "start": 1306
+          },
+          {
+            "length": 32,
+            "start": 2250
+          },
+          {
+            "length": 32,
+            "start": 2325
+          }
+        ]
+      }
+    },
+    {
+      "role": "liquidityLocker",
+      "source": "src/vnext/CatchFamilyLiquidityLockerV1.sol",
+      "contract": "CatchFamilyLiquidityLockerV1",
+      "input": "verification/liquidityLocker.standard-input.json",
+      "inputSha256": "b9fa74ae5ef1b849c1911490b1d87d43dd3bf3ca9be57df74b6428e2ad30bb12",
+      "creationBytecodeSha256": "6f91a5d9839b8b5349bb076299b1055f8f8ca5e455615d55ab3b24e6795a1358",
+      "runtimeTemplateSha256": "02bf6bb954875097e17057dd6a8b9719b559743bef516594dc5c96f48d1fbd4a",
+      "immutableReferences": {
+        "2073": [
+          {
+            "length": 32,
+            "start": 385
+          },
+          {
+            "length": 32,
+            "start": 1672
+          },
+          {
+            "length": 32,
+            "start": 2924
+          },
+          {
+            "length": 32,
+            "start": 4281
+          },
+          {
+            "length": 32,
+            "start": 5747
+          }
+        ],
+        "2075": [
+          {
+            "length": 32,
+            "start": 646
+          },
+          {
+            "length": 32,
+            "start": 1021
+          },
+          {
+            "length": 32,
+            "start": 1509
+          },
+          {
+            "length": 32,
+            "start": 4838
+          },
+          {
+            "length": 32,
+            "start": 4978
+          }
+        ],
+        "2077": [
+          {
+            "length": 32,
+            "start": 684
+          },
+          {
+            "length": 32,
+            "start": 1406
+          },
+          {
+            "length": 32,
+            "start": 3766
+          },
+          {
+            "length": 32,
+            "start": 5126
+          }
+        ],
+        "2079": [
+          {
+            "length": 32,
+            "start": 454
+          },
+          {
+            "length": 32,
+            "start": 542
+          },
+          {
+            "length": 32,
+            "start": 1320
+          }
+        ],
+        "2081": [
+          {
+            "length": 32,
+            "start": 1950
+          },
+          {
+            "length": 32,
+            "start": 2648
+          },
+          {
+            "length": 32,
+            "start": 4414
+          }
+        ],
+        "2083": [
+          {
+            "length": 32,
+            "start": 1991
+          },
+          {
+            "length": 32,
+            "start": 2710
+          },
+          {
+            "length": 32,
+            "start": 4458
+          }
+        ],
+        "2085": [
+          {
+            "length": 32,
+            "start": 295
+          },
+          {
+            "length": 32,
+            "start": 2032
+          },
+          {
+            "length": 32,
+            "start": 4507
+          }
+        ],
+        "2087": [
+          {
+            "length": 32,
+            "start": 2772
+          },
+          {
+            "length": 32,
+            "start": 3105
+          }
+        ]
+      }
+    },
+    {
+      "role": "feeLedger",
+      "source": "src/vnext/CatchFamilyFeeLedgerV1.sol",
+      "contract": "CatchFamilyFeeLedgerV1",
+      "input": "verification/feeLedger.standard-input.json",
+      "inputSha256": "b1b0fc6bd74a45c9e5a4fdb50e1e2ea35b8e8975d2b154a50ca6a14ba10a7b9b",
+      "creationBytecodeSha256": "fee415bbfbb510173aa6ec395b95e6364d29a69a7a3ef6bf880cab81ae4ea964",
+      "runtimeTemplateSha256": "fbf92d7704da9a062c8a4b813d3295021d04b3be83e1f44ccaafd05dcd082041",
+      "immutableReferences": {
+        "358": [
+          {
+            "length": 32,
+            "start": 1399
+          },
+          {
+            "length": 32,
+            "start": 2394
+          },
+          {
+            "length": 32,
+            "start": 4936
+          }
+        ],
+        "361": [
+          {
+            "length": 32,
+            "start": 2713
+          },
+          {
+            "length": 32,
+            "start": 4171
+          }
+        ],
+        "363": [
+          {
+            "length": 32,
+            "start": 801
+          },
+          {
+            "length": 32,
+            "start": 1356
+          },
+          {
+            "length": 32,
+            "start": 4882
+          }
+        ],
+        "365": [
+          {
+            "length": 32,
+            "start": 1474
+          },
+          {
+            "length": 32,
+            "start": 2463
+          },
+          {
+            "length": 32,
+            "start": 3014
+          },
+          {
+            "length": 32,
+            "start": 5010
+          }
+        ],
+        "367": [
+          {
+            "length": 32,
+            "start": 2325
+          },
+          {
+            "length": 32,
+            "start": 3774
+          }
+        ],
+        "369": [
+          {
+            "length": 32,
+            "start": 2256
+          },
+          {
+            "length": 32,
+            "start": 4421
+          }
+        ],
+        "371": [
+          {
+            "length": 32,
+            "start": 1162
+          },
+          {
+            "length": 32,
+            "start": 3824
+          }
+        ],
+        "373": [
+          {
+            "length": 32,
+            "start": 2534
+          },
+          {
+            "length": 32,
+            "start": 4471
+          }
+        ],
+        "375": [
+          {
+            "length": 32,
+            "start": 889
+          },
+          {
+            "length": 32,
+            "start": 4103
+          }
+        ]
+      }
+    },
+    {
+      "role": "releaseController",
+      "source": "src/vnext/CatchFamilyReleaseControllerV1.sol",
+      "contract": "CatchFamilyReleaseControllerV1",
+      "input": "verification/releaseController.standard-input.json",
+      "inputSha256": "3456b21c8dca3c69f86c1def512882c8165eff8454915ce811ea78c1f4f1f3b9",
+      "creationBytecodeSha256": "ffa330d6544f1bbb63d3e2493833db69244faf75eb67ec81e6438dbeab9f1617",
+      "runtimeTemplateSha256": "3c416488da3a5c81ec1b3e2dacb0be8a3bce3c00a3fcadc9090a5879d2bcc726",
+      "immutableReferences": {
+        "731": [
+          {
+            "length": 32,
+            "start": 1076
+          },
+          {
+            "length": 32,
+            "start": 2667
+          },
+          {
+            "length": 32,
+            "start": 4584
+          },
+          {
+            "length": 32,
+            "start": 4940
+          }
+        ],
+        "734": [
+          {
+            "length": 32,
+            "start": 3241
+          },
+          {
+            "length": 32,
+            "start": 5059
+          }
+        ],
+        "737": [
+          {
+            "length": 32,
+            "start": 911
+          },
+          {
+            "length": 32,
+            "start": 2793
+          },
+          {
+            "length": 32,
+            "start": 4754
+          },
+          {
+            "length": 32,
+            "start": 5138
+          }
+        ],
+        "739": [
+          {
+            "length": 32,
+            "start": 405
+          },
+          {
+            "length": 32,
+            "start": 4531
+          },
+          {
+            "length": 32,
+            "start": 4890
+          }
+        ],
+        "742": [
+          {
+            "length": 32,
+            "start": 1592
+          },
+          {
+            "length": 32,
+            "start": 2515
+          },
+          {
+            "length": 32,
+            "start": 3667
+          }
+        ],
+        "744": [
+          {
+            "length": 32,
+            "start": 2929
+          },
+          {
+            "length": 32,
+            "start": 3498
+          },
+          {
+            "length": 32,
+            "start": 3547
+          }
+        ],
+        "746": [
+          {
+            "length": 32,
+            "start": 531
+          },
+          {
+            "length": 32,
+            "start": 3356
+          }
+        ],
+        "748": [
+          {
+            "length": 32,
+            "start": 717
+          },
+          {
+            "length": 32,
+            "start": 2737
+          },
+          {
+            "length": 32,
+            "start": 3964
+          }
+        ],
+        "750": [
+          {
+            "length": 32,
+            "start": 954
+          },
+          {
+            "length": 32,
+            "start": 3035
+          }
+        ],
+        "752": [
+          {
+            "length": 32,
+            "start": 602
+          },
+          {
+            "length": 32,
+            "start": 2482
+          }
+        ]
+      }
+    },
+    {
+      "role": "factory",
+      "source": "src/vnext/CatchFamilyFactoryV1.sol",
+      "contract": "CatchFamilyFactoryV1",
+      "input": "verification/factory.standard-input.json",
+      "inputSha256": "8f08a70cb41df0b34a48bc52189dca606ee875bbb8480114e7aeff0789b50053",
+      "creationBytecodeSha256": "52021ffcec0d7f0a20d873e9dc2505793521359dd590be10a1f336a99b194b10",
+      "runtimeTemplateSha256": "93749a5d8361d402ba1e3456e61647a805515dd9097657534ac415d54938fa7b",
+      "immutableReferences": {
+        "5330": [
+          {
+            "length": 32,
+            "start": 374
+          },
+          {
+            "length": 32,
+            "start": 1785
+          },
+          {
+            "length": 32,
+            "start": 3148
+          },
+          {
+            "length": 32,
+            "start": 4173
+          },
+          {
+            "length": 32,
+            "start": 5907
+          }
+        ],
+        "5332": [
+          {
+            "length": 32,
+            "start": 1449
+          },
+          {
+            "length": 32,
+            "start": 4569
+          }
+        ],
+        "5334": [
+          {
+            "length": 32,
+            "start": 1551
+          },
+          {
+            "length": 32,
+            "start": 1737
+          },
+          {
+            "length": 32,
+            "start": 4913
+          }
+        ],
+        "5336": [
+          {
+            "length": 32,
+            "start": 763
+          },
+          {
+            "length": 32,
+            "start": 4953
+          }
+        ],
+        "5338": [
+          {
+            "length": 32,
+            "start": 1072
+          },
+          {
+            "length": 32,
+            "start": 1828
+          }
+        ]
+      }
+    }
+  ]
+}
