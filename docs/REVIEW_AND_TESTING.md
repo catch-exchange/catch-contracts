@@ -21,7 +21,7 @@ results from current-source evidence.
 
 | Review stage | Evidence and scope | Boundary |
 | --- | --- | --- |
-| August 2026 hardening | Pashov-style specialist lenses, EthSkills checks, precision/fuzz testing and Robinhood fork tests | Superseded cNVDA design; not carried forward as V1 certification or added to current test totals |
+| August 2026 hardening | Pashov-style specialist lenses, EthSkills checks, precision/fuzz testing and Robinhood fork tests | Superseded order-based design; not carried forward as V1 certification or added to current test totals |
 | 3 September: cGOLD candidate `c73ca1254a8d41a646c305219ed959cb1458e3c8` | Separate Codex/Claude framework sessions. Recovered Claude metadata records 12 Pashov specialists and 11 EthSkills lenses, with executable reproduction tests. Codex records workflow execution, pinned versions, specialist findings and tests | Pre-remediation candidate, not the deployed reusable factory. The recovered Claude verdict was NO-GO pending remediation/design disposition. A complete sealed Codex final verdict was not recovered for this publication |
 | 3 September remediation | Regression-backed changes for specified-side partial fills, launch-address dust, exact-ratio release rounding and paused previews | Intentional primary/secondary price separation and liquid-only NAV were retained, not reported as fixed defects |
 | 4 September naming/ABI delta, `ceb860d` → `5f46642` | Claude reviewed generic component names, ABI/events/receipt domains, custody bindings and economic parity; no Critical/High/Medium reported in that delta | Narrow delta review, not a second whole-protocol audit |
@@ -83,6 +83,9 @@ to identify every test byte.
 | Economic simulators | 10 | Release ledger, launch geometry, buy/sell/redemption and backing-per-claim models |
 
 **40 Solidity tests and 10 simulator tests passed; zero failed or skipped.**
+The earlier 44-test count included five fork tests (39 non-fork tests); this
+40-test offline snapshot additionally includes the unreleased-inventory
+isolation regression. These are different snapshots, not 44 tests relabelled 40.
 Each of the six invariants reports 256 runs, 128,000 calls and zero handler
 reverts. Those are counts reported per invariant, **not a claim of 768,000
 independent economic paths**. The handler explores purchases, sells, paid

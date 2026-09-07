@@ -1,0 +1,1521 @@
+{
+  "schema": "catch.public-source-verification.v1",
+  "chainId": 4663,
+  "checkedAt": "2026-09-07T12:14:23.953Z",
+  "evidenceSha256": "b7669bfeefa1f226b4c374b82f6888624045bb692ca2e0e42b4e1f0e09ea91bb",
+  "scope": "Recorded source correspondence at the stated check times, not an audit, current-state guarantee or router admission.",
+  "contracts": [
+    {
+      "family": "sharedV1",
+      "component": "factory",
+      "address": "0x21acbcc6227cf5d2fb5eb876735edd04f7b49c12",
+      "creationTransactionHash": "0x10dd2aafba8f9ee72434f432703405b4f7aa876d200309577e72440cb2190376",
+      "standardInputSha256": "8f08a70cb41df0b34a48bc52189dca606ee875bbb8480114e7aeff0789b50053",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47117012",
+        "verifiedAt": "2026-09-04T15:09:34Z",
+        "checkedAt": "2026-09-07T12:07:47.323Z",
+        "url": "https://repo.sourcify.dev/4663/0x21acbcc6227cf5d2fb5eb876735edd04f7b49c12"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x21acbcc6227cf5d2fb5eb876735edd04f7b49c12?tab=contract"
+      }
+    },
+    {
+      "family": "cGOLD",
+      "component": "cAsset",
+      "address": "0xb44e29a0540c48054d9caec192cdbb18c68398ec",
+      "creationTransactionHash": "0xd1e944fd1c2f6c39b86d804bc16ad6cd7be1f6f6281f46f513dd86165f589958",
+      "standardInputSha256": "510a7671432c5107dbb58d055e1e733ddd6d4682c9e865620225466ae3d538a9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236906",
+        "verifiedAt": "2026-09-07T12:07:20Z",
+        "checkedAt": "2026-09-07T12:07:47.389Z",
+        "url": "https://repo.sourcify.dev/4663/0xb44e29a0540c48054d9caec192cdbb18c68398ec"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xb44e29a0540c48054d9caec192cdbb18c68398ec?tab=contract"
+      }
+    },
+    {
+      "family": "cGOLD",
+      "component": "releaseVault",
+      "address": "0x05d85a34b8ae5668a95506ebf3d058763c3ba480",
+      "creationTransactionHash": "0xd1e944fd1c2f6c39b86d804bc16ad6cd7be1f6f6281f46f513dd86165f589958",
+      "standardInputSha256": "a9a50848f1225f2076bbe3e5fd008a18baa10733da1db598893b83f178f21b02",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47118227",
+        "verifiedAt": "2026-09-04T15:49:58Z",
+        "checkedAt": "2026-09-07T12:07:47.389Z",
+        "url": "https://repo.sourcify.dev/4663/0x05d85a34b8ae5668a95506ebf3d058763c3ba480"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x05d85a34b8ae5668a95506ebf3d058763c3ba480?tab=contract"
+      }
+    },
+    {
+      "family": "cGOLD",
+      "component": "reserveVault",
+      "address": "0x9170640abc28c2e273e4bf22d6c0bbdf658b2abd",
+      "creationTransactionHash": "0xd1e944fd1c2f6c39b86d804bc16ad6cd7be1f6f6281f46f513dd86165f589958",
+      "standardInputSha256": "0ff31821d1dad4a0ce5ac00e243f5e3b80e07ca69e6fd4522ce8c69e1f7fa776",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47118233",
+        "verifiedAt": "2026-09-04T15:51:14Z",
+        "checkedAt": "2026-09-07T12:07:47.468Z",
+        "url": "https://repo.sourcify.dev/4663/0x9170640abc28c2e273e4bf22d6c0bbdf658b2abd"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x9170640abc28c2e273e4bf22d6c0bbdf658b2abd?tab=contract"
+      }
+    },
+    {
+      "family": "cGOLD",
+      "component": "hook",
+      "address": "0x65a5ca88b08960daf4818435280f69c48ede80cc",
+      "creationTransactionHash": "0xd1e944fd1c2f6c39b86d804bc16ad6cd7be1f6f6281f46f513dd86165f589958",
+      "standardInputSha256": "662e384c1f05a56f92777710309f51c55d5fadbbbdb68977946889c710d53361",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47118243",
+        "verifiedAt": "2026-09-04T15:51:43Z",
+        "checkedAt": "2026-09-07T12:07:47.468Z",
+        "url": "https://repo.sourcify.dev/4663/0x65a5ca88b08960daf4818435280f69c48ede80cc"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x65a5ca88b08960daf4818435280f69c48ede80cc?tab=contract"
+      }
+    },
+    {
+      "family": "cGOLD",
+      "component": "liquidityLocker",
+      "address": "0x294e9c457336b79d0e830ee6e80290ad2a3bd379",
+      "creationTransactionHash": "0xd1e944fd1c2f6c39b86d804bc16ad6cd7be1f6f6281f46f513dd86165f589958",
+      "standardInputSha256": "b9fa74ae5ef1b849c1911490b1d87d43dd3bf3ca9be57df74b6428e2ad30bb12",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47118246",
+        "verifiedAt": "2026-09-04T15:52:11Z",
+        "checkedAt": "2026-09-07T12:07:47.493Z",
+        "url": "https://repo.sourcify.dev/4663/0x294e9c457336b79d0e830ee6e80290ad2a3bd379"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x294e9c457336b79d0e830ee6e80290ad2a3bd379?tab=contract"
+      }
+    },
+    {
+      "family": "cGOLD",
+      "component": "feeLedger",
+      "address": "0x42ff109bcd01119a8db1fa94149a40e92d630a7c",
+      "creationTransactionHash": "0xd1e944fd1c2f6c39b86d804bc16ad6cd7be1f6f6281f46f513dd86165f589958",
+      "standardInputSha256": "b1b0fc6bd74a45c9e5a4fdb50e1e2ea35b8e8975d2b154a50ca6a14ba10a7b9b",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47118247",
+        "verifiedAt": "2026-09-04T15:52:22Z",
+        "checkedAt": "2026-09-07T12:07:47.494Z",
+        "url": "https://repo.sourcify.dev/4663/0x42ff109bcd01119a8db1fa94149a40e92d630a7c"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x42ff109bcd01119a8db1fa94149a40e92d630a7c?tab=contract"
+      }
+    },
+    {
+      "family": "cGOLD",
+      "component": "releaseController",
+      "address": "0x69512fa2608570e66c9aced3617405c3d03f1246",
+      "creationTransactionHash": "0xd1e944fd1c2f6c39b86d804bc16ad6cd7be1f6f6281f46f513dd86165f589958",
+      "standardInputSha256": "3456b21c8dca3c69f86c1def512882c8165eff8454915ce811ea78c1f4f1f3b9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47118250",
+        "verifiedAt": "2026-09-04T15:52:42Z",
+        "checkedAt": "2026-09-07T12:07:47.518Z",
+        "url": "https://repo.sourcify.dev/4663/0x69512fa2608570e66c9aced3617405c3d03f1246"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x69512fa2608570e66c9aced3617405c3d03f1246?tab=contract"
+      }
+    },
+    {
+      "family": "cSPY",
+      "component": "cAsset",
+      "address": "0xad2a032b99ede1ce2f03d2f1ba5a1b790f98592e",
+      "creationTransactionHash": "0x3daf54ef2ce5b51467c6a422fe5302446348a27a851cf24c3a2e28657bb5201a",
+      "standardInputSha256": "510a7671432c5107dbb58d055e1e733ddd6d4682c9e865620225466ae3d538a9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236907",
+        "verifiedAt": "2026-09-07T12:07:20Z",
+        "checkedAt": "2026-09-07T12:07:47.519Z",
+        "url": "https://repo.sourcify.dev/4663/0xad2a032b99ede1ce2f03d2f1ba5a1b790f98592e"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xad2a032b99ede1ce2f03d2f1ba5a1b790f98592e?tab=contract"
+      }
+    },
+    {
+      "family": "cSPY",
+      "component": "releaseVault",
+      "address": "0x53ecc74c7e2392306a34e5a3d3211c7f54422c38",
+      "creationTransactionHash": "0x3daf54ef2ce5b51467c6a422fe5302446348a27a851cf24c3a2e28657bb5201a",
+      "standardInputSha256": "a9a50848f1225f2076bbe3e5fd008a18baa10733da1db598893b83f178f21b02",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236902",
+        "verifiedAt": "2026-09-07T12:07:20Z",
+        "checkedAt": "2026-09-07T12:07:47.571Z",
+        "url": "https://repo.sourcify.dev/4663/0x53ecc74c7e2392306a34e5a3d3211c7f54422c38"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x53ecc74c7e2392306a34e5a3d3211c7f54422c38?tab=contract"
+      }
+    },
+    {
+      "family": "cSPY",
+      "component": "reserveVault",
+      "address": "0xbc1acfc8312c9b2d85b4498ee5a2106572ca767b",
+      "creationTransactionHash": "0x3daf54ef2ce5b51467c6a422fe5302446348a27a851cf24c3a2e28657bb5201a",
+      "standardInputSha256": "0ff31821d1dad4a0ce5ac00e243f5e3b80e07ca69e6fd4522ce8c69e1f7fa776",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236909",
+        "verifiedAt": "2026-09-07T12:07:20Z",
+        "checkedAt": "2026-09-07T12:07:47.572Z",
+        "url": "https://repo.sourcify.dev/4663/0xbc1acfc8312c9b2d85b4498ee5a2106572ca767b"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xbc1acfc8312c9b2d85b4498ee5a2106572ca767b?tab=contract"
+      }
+    },
+    {
+      "family": "cSPY",
+      "component": "hook",
+      "address": "0xe47059cdcb36f96acf7a79791acec540b793c0cc",
+      "creationTransactionHash": "0x3daf54ef2ce5b51467c6a422fe5302446348a27a851cf24c3a2e28657bb5201a",
+      "standardInputSha256": "662e384c1f05a56f92777710309f51c55d5fadbbbdb68977946889c710d53361",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236946",
+        "verifiedAt": "2026-09-07T12:07:23Z",
+        "checkedAt": "2026-09-07T12:07:47.626Z",
+        "url": "https://repo.sourcify.dev/4663/0xe47059cdcb36f96acf7a79791acec540b793c0cc"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xe47059cdcb36f96acf7a79791acec540b793c0cc?tab=contract"
+      }
+    },
+    {
+      "family": "cSPY",
+      "component": "liquidityLocker",
+      "address": "0xc78f005deb46b33ec6d6ca417258b54534ed592b",
+      "creationTransactionHash": "0x3daf54ef2ce5b51467c6a422fe5302446348a27a851cf24c3a2e28657bb5201a",
+      "standardInputSha256": "b9fa74ae5ef1b849c1911490b1d87d43dd3bf3ca9be57df74b6428e2ad30bb12",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236941",
+        "verifiedAt": "2026-09-07T12:07:22Z",
+        "checkedAt": "2026-09-07T12:07:47.627Z",
+        "url": "https://repo.sourcify.dev/4663/0xc78f005deb46b33ec6d6ca417258b54534ed592b"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xc78f005deb46b33ec6d6ca417258b54534ed592b?tab=contract"
+      }
+    },
+    {
+      "family": "cSPY",
+      "component": "feeLedger",
+      "address": "0x49d88b1a99d990e0d436598d89f60fcf51e4d77a",
+      "creationTransactionHash": "0x3daf54ef2ce5b51467c6a422fe5302446348a27a851cf24c3a2e28657bb5201a",
+      "standardInputSha256": "b1b0fc6bd74a45c9e5a4fdb50e1e2ea35b8e8975d2b154a50ca6a14ba10a7b9b",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236922",
+        "verifiedAt": "2026-09-07T12:07:21Z",
+        "checkedAt": "2026-09-07T12:07:47.719Z",
+        "url": "https://repo.sourcify.dev/4663/0x49d88b1a99d990e0d436598d89f60fcf51e4d77a"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x49d88b1a99d990e0d436598d89f60fcf51e4d77a?tab=contract"
+      }
+    },
+    {
+      "family": "cSPY",
+      "component": "releaseController",
+      "address": "0x542b343e209c1a8707e6cc0336773651b4db0217",
+      "creationTransactionHash": "0x3daf54ef2ce5b51467c6a422fe5302446348a27a851cf24c3a2e28657bb5201a",
+      "standardInputSha256": "3456b21c8dca3c69f86c1def512882c8165eff8454915ce811ea78c1f4f1f3b9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236930",
+        "verifiedAt": "2026-09-07T12:07:22Z",
+        "checkedAt": "2026-09-07T12:07:47.720Z",
+        "url": "https://repo.sourcify.dev/4663/0x542b343e209c1a8707e6cc0336773651b4db0217"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x542b343e209c1a8707e6cc0336773651b4db0217?tab=contract"
+      }
+    },
+    {
+      "family": "cNVDA",
+      "component": "cAsset",
+      "address": "0x842c2264f683e490432c15155de8ac6398da3c71",
+      "creationTransactionHash": "0x98376bdc2fd424a628fea607c77759f38f1f85cad47840b240bd1002226c146c",
+      "standardInputSha256": "510a7671432c5107dbb58d055e1e733ddd6d4682c9e865620225466ae3d538a9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236648",
+        "verifiedAt": "2026-09-07T12:01:53Z",
+        "checkedAt": "2026-09-07T12:07:47.778Z",
+        "url": "https://repo.sourcify.dev/4663/0x842c2264f683e490432c15155de8ac6398da3c71"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x842c2264f683e490432c15155de8ac6398da3c71?tab=contract"
+      }
+    },
+    {
+      "family": "cNVDA",
+      "component": "releaseVault",
+      "address": "0x8103c01242278f3131903d9b3f9a68d855c56932",
+      "creationTransactionHash": "0x98376bdc2fd424a628fea607c77759f38f1f85cad47840b240bd1002226c146c",
+      "standardInputSha256": "a9a50848f1225f2076bbe3e5fd008a18baa10733da1db598893b83f178f21b02",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236864",
+        "verifiedAt": "2026-09-07T12:06:33Z",
+        "checkedAt": "2026-09-07T12:07:47.779Z",
+        "url": "https://repo.sourcify.dev/4663/0x8103c01242278f3131903d9b3f9a68d855c56932"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x8103c01242278f3131903d9b3f9a68d855c56932?tab=contract"
+      }
+    },
+    {
+      "family": "cNVDA",
+      "component": "reserveVault",
+      "address": "0x3c47b47e61e6658e2ed6313e6dfbc34adef0fff4",
+      "creationTransactionHash": "0x98376bdc2fd424a628fea607c77759f38f1f85cad47840b240bd1002226c146c",
+      "standardInputSha256": "0ff31821d1dad4a0ce5ac00e243f5e3b80e07ca69e6fd4522ce8c69e1f7fa776",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236863",
+        "verifiedAt": "2026-09-07T12:06:32Z",
+        "checkedAt": "2026-09-07T12:07:47.860Z",
+        "url": "https://repo.sourcify.dev/4663/0x3c47b47e61e6658e2ed6313e6dfbc34adef0fff4"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x3c47b47e61e6658e2ed6313e6dfbc34adef0fff4?tab=contract"
+      }
+    },
+    {
+      "family": "cNVDA",
+      "component": "hook",
+      "address": "0x19a1e7a63e54f27feaea859422bb99326c35c0cc",
+      "creationTransactionHash": "0x98376bdc2fd424a628fea607c77759f38f1f85cad47840b240bd1002226c146c",
+      "standardInputSha256": "662e384c1f05a56f92777710309f51c55d5fadbbbdb68977946889c710d53361",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236868",
+        "verifiedAt": "2026-09-07T12:06:34Z",
+        "checkedAt": "2026-09-07T12:07:47.861Z",
+        "url": "https://repo.sourcify.dev/4663/0x19a1e7a63e54f27feaea859422bb99326c35c0cc"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x19a1e7a63e54f27feaea859422bb99326c35c0cc?tab=contract"
+      }
+    },
+    {
+      "family": "cNVDA",
+      "component": "liquidityLocker",
+      "address": "0x6a48ced21294da8f08d95c9f6314e8b30309d62e",
+      "creationTransactionHash": "0x98376bdc2fd424a628fea607c77759f38f1f85cad47840b240bd1002226c146c",
+      "standardInputSha256": "b9fa74ae5ef1b849c1911490b1d87d43dd3bf3ca9be57df74b6428e2ad30bb12",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236865",
+        "verifiedAt": "2026-09-07T12:06:33Z",
+        "checkedAt": "2026-09-07T12:07:47.954Z",
+        "url": "https://repo.sourcify.dev/4663/0x6a48ced21294da8f08d95c9f6314e8b30309d62e"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x6a48ced21294da8f08d95c9f6314e8b30309d62e?tab=contract"
+      }
+    },
+    {
+      "family": "cNVDA",
+      "component": "feeLedger",
+      "address": "0x5992ee32bf2ed297da5b41cd5a6c9128b2be1761",
+      "creationTransactionHash": "0x98376bdc2fd424a628fea607c77759f38f1f85cad47840b240bd1002226c146c",
+      "standardInputSha256": "b1b0fc6bd74a45c9e5a4fdb50e1e2ea35b8e8975d2b154a50ca6a14ba10a7b9b",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236866",
+        "verifiedAt": "2026-09-07T12:06:33Z",
+        "checkedAt": "2026-09-07T12:07:47.955Z",
+        "url": "https://repo.sourcify.dev/4663/0x5992ee32bf2ed297da5b41cd5a6c9128b2be1761"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x5992ee32bf2ed297da5b41cd5a6c9128b2be1761?tab=contract"
+      }
+    },
+    {
+      "family": "cNVDA",
+      "component": "releaseController",
+      "address": "0x017ec64664a9ba4cc2f793efcc1d7c9434204aee",
+      "creationTransactionHash": "0x98376bdc2fd424a628fea607c77759f38f1f85cad47840b240bd1002226c146c",
+      "standardInputSha256": "3456b21c8dca3c69f86c1def512882c8165eff8454915ce811ea78c1f4f1f3b9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236867",
+        "verifiedAt": "2026-09-07T12:06:34Z",
+        "checkedAt": "2026-09-07T12:07:48.025Z",
+        "url": "https://repo.sourcify.dev/4663/0x017ec64664a9ba4cc2f793efcc1d7c9434204aee"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x017ec64664a9ba4cc2f793efcc1d7c9434204aee?tab=contract"
+      }
+    },
+    {
+      "family": "cEWY",
+      "component": "cAsset",
+      "address": "0x166bf4c32d522aea235b49cd6c06433ad6d4c739",
+      "creationTransactionHash": "0xb84ec02f1a6a64ac5ff665d2aabfaa4743a0d09e8f73e2bcf395fe34a865b542",
+      "standardInputSha256": "510a7671432c5107dbb58d055e1e733ddd6d4682c9e865620225466ae3d538a9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236905",
+        "verifiedAt": "2026-09-07T12:07:20Z",
+        "checkedAt": "2026-09-07T12:07:48.026Z",
+        "url": "https://repo.sourcify.dev/4663/0x166bf4c32d522aea235b49cd6c06433ad6d4c739"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x166bf4c32d522aea235b49cd6c06433ad6d4c739?tab=contract"
+      }
+    },
+    {
+      "family": "cEWY",
+      "component": "releaseVault",
+      "address": "0x705ead0a23945b2ac5abcd6529c1087b99339f4f",
+      "creationTransactionHash": "0xb84ec02f1a6a64ac5ff665d2aabfaa4743a0d09e8f73e2bcf395fe34a865b542",
+      "standardInputSha256": "a9a50848f1225f2076bbe3e5fd008a18baa10733da1db598893b83f178f21b02",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236903",
+        "verifiedAt": "2026-09-07T12:07:20Z",
+        "checkedAt": "2026-09-07T12:07:48.077Z",
+        "url": "https://repo.sourcify.dev/4663/0x705ead0a23945b2ac5abcd6529c1087b99339f4f"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x705ead0a23945b2ac5abcd6529c1087b99339f4f?tab=contract"
+      }
+    },
+    {
+      "family": "cEWY",
+      "component": "reserveVault",
+      "address": "0x3c18e823f7f8a612727c534493c763374c116fdd",
+      "creationTransactionHash": "0xb84ec02f1a6a64ac5ff665d2aabfaa4743a0d09e8f73e2bcf395fe34a865b542",
+      "standardInputSha256": "0ff31821d1dad4a0ce5ac00e243f5e3b80e07ca69e6fd4522ce8c69e1f7fa776",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236904",
+        "verifiedAt": "2026-09-07T12:07:20Z",
+        "checkedAt": "2026-09-07T12:07:48.077Z",
+        "url": "https://repo.sourcify.dev/4663/0x3c18e823f7f8a612727c534493c763374c116fdd"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x3c18e823f7f8a612727c534493c763374c116fdd?tab=contract"
+      }
+    },
+    {
+      "family": "cEWY",
+      "component": "hook",
+      "address": "0xcf20ad024bc02536c5b75a10753de795528540cc",
+      "creationTransactionHash": "0xb84ec02f1a6a64ac5ff665d2aabfaa4743a0d09e8f73e2bcf395fe34a865b542",
+      "standardInputSha256": "662e384c1f05a56f92777710309f51c55d5fadbbbdb68977946889c710d53361",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236976",
+        "verifiedAt": "2026-09-07T12:07:24Z",
+        "checkedAt": "2026-09-07T12:07:48.134Z",
+        "url": "https://repo.sourcify.dev/4663/0xcf20ad024bc02536c5b75a10753de795528540cc"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xcf20ad024bc02536c5b75a10753de795528540cc?tab=contract"
+      }
+    },
+    {
+      "family": "cEWY",
+      "component": "liquidityLocker",
+      "address": "0x90bf5b372ad4ed41f2b25598d178c89b9b739c51",
+      "creationTransactionHash": "0xb84ec02f1a6a64ac5ff665d2aabfaa4743a0d09e8f73e2bcf395fe34a865b542",
+      "standardInputSha256": "b9fa74ae5ef1b849c1911490b1d87d43dd3bf3ca9be57df74b6428e2ad30bb12",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236949",
+        "verifiedAt": "2026-09-07T12:07:23Z",
+        "checkedAt": "2026-09-07T12:07:48.135Z",
+        "url": "https://repo.sourcify.dev/4663/0x90bf5b372ad4ed41f2b25598d178c89b9b739c51"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x90bf5b372ad4ed41f2b25598d178c89b9b739c51?tab=contract"
+      }
+    },
+    {
+      "family": "cEWY",
+      "component": "feeLedger",
+      "address": "0x4e0d6b25d50b5e23f0539a2911349796d5388764",
+      "creationTransactionHash": "0xb84ec02f1a6a64ac5ff665d2aabfaa4743a0d09e8f73e2bcf395fe34a865b542",
+      "standardInputSha256": "b1b0fc6bd74a45c9e5a4fdb50e1e2ea35b8e8975d2b154a50ca6a14ba10a7b9b",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236939",
+        "verifiedAt": "2026-09-07T12:07:22Z",
+        "checkedAt": "2026-09-07T12:07:48.206Z",
+        "url": "https://repo.sourcify.dev/4663/0x4e0d6b25d50b5e23f0539a2911349796d5388764"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x4e0d6b25d50b5e23f0539a2911349796d5388764?tab=contract"
+      }
+    },
+    {
+      "family": "cEWY",
+      "component": "releaseController",
+      "address": "0xa1e048faf4d013768e334bda3440b1f1e87b370a",
+      "creationTransactionHash": "0xb84ec02f1a6a64ac5ff665d2aabfaa4743a0d09e8f73e2bcf395fe34a865b542",
+      "standardInputSha256": "3456b21c8dca3c69f86c1def512882c8165eff8454915ce811ea78c1f4f1f3b9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236937",
+        "verifiedAt": "2026-09-07T12:07:22Z",
+        "checkedAt": "2026-09-07T12:07:48.207Z",
+        "url": "https://repo.sourcify.dev/4663/0xa1e048faf4d013768e334bda3440b1f1e87b370a"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xa1e048faf4d013768e334bda3440b1f1e87b370a?tab=contract"
+      }
+    },
+    {
+      "family": "cSGOV",
+      "component": "cAsset",
+      "address": "0x99cbade570867b40c2964bead28d2df366d9f1a9",
+      "creationTransactionHash": "0x64c575a8aa4ccb884acd479bc3dd6a9300decf61857e378c120bac62cba29ef9",
+      "standardInputSha256": "510a7671432c5107dbb58d055e1e733ddd6d4682c9e865620225466ae3d538a9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236919",
+        "verifiedAt": "2026-09-07T12:07:21Z",
+        "checkedAt": "2026-09-07T12:07:48.272Z",
+        "url": "https://repo.sourcify.dev/4663/0x99cbade570867b40c2964bead28d2df366d9f1a9"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x99cbade570867b40c2964bead28d2df366d9f1a9?tab=contract"
+      }
+    },
+    {
+      "family": "cSGOV",
+      "component": "releaseVault",
+      "address": "0x35f773f46e3883a735161cbfdf130dfdebc3a447",
+      "creationTransactionHash": "0x64c575a8aa4ccb884acd479bc3dd6a9300decf61857e378c120bac62cba29ef9",
+      "standardInputSha256": "a9a50848f1225f2076bbe3e5fd008a18baa10733da1db598893b83f178f21b02",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236912",
+        "verifiedAt": "2026-09-07T12:07:21Z",
+        "checkedAt": "2026-09-07T12:07:48.272Z",
+        "url": "https://repo.sourcify.dev/4663/0x35f773f46e3883a735161cbfdf130dfdebc3a447"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x35f773f46e3883a735161cbfdf130dfdebc3a447?tab=contract"
+      }
+    },
+    {
+      "family": "cSGOV",
+      "component": "reserveVault",
+      "address": "0x71375d34c4543d12ea40cf5e66ee1fa319dd6403",
+      "creationTransactionHash": "0x64c575a8aa4ccb884acd479bc3dd6a9300decf61857e378c120bac62cba29ef9",
+      "standardInputSha256": "0ff31821d1dad4a0ce5ac00e243f5e3b80e07ca69e6fd4522ce8c69e1f7fa776",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236908",
+        "verifiedAt": "2026-09-07T12:07:20Z",
+        "checkedAt": "2026-09-07T12:07:48.333Z",
+        "url": "https://repo.sourcify.dev/4663/0x71375d34c4543d12ea40cf5e66ee1fa319dd6403"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x71375d34c4543d12ea40cf5e66ee1fa319dd6403?tab=contract"
+      }
+    },
+    {
+      "family": "cSGOV",
+      "component": "hook",
+      "address": "0xc1eb0b1557f241a069c38136ce69bfa4502700cc",
+      "creationTransactionHash": "0x64c575a8aa4ccb884acd479bc3dd6a9300decf61857e378c120bac62cba29ef9",
+      "standardInputSha256": "662e384c1f05a56f92777710309f51c55d5fadbbbdb68977946889c710d53361",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236953",
+        "verifiedAt": "2026-09-07T12:07:23Z",
+        "checkedAt": "2026-09-07T12:07:48.333Z",
+        "url": "https://repo.sourcify.dev/4663/0xc1eb0b1557f241a069c38136ce69bfa4502700cc"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xc1eb0b1557f241a069c38136ce69bfa4502700cc?tab=contract"
+      }
+    },
+    {
+      "family": "cSGOV",
+      "component": "liquidityLocker",
+      "address": "0x2e9addc98b4c8d0e5fbbcb80f982a0b3c4983c3d",
+      "creationTransactionHash": "0x64c575a8aa4ccb884acd479bc3dd6a9300decf61857e378c120bac62cba29ef9",
+      "standardInputSha256": "b9fa74ae5ef1b849c1911490b1d87d43dd3bf3ca9be57df74b6428e2ad30bb12",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236913",
+        "verifiedAt": "2026-09-07T12:07:21Z",
+        "checkedAt": "2026-09-07T12:07:48.386Z",
+        "url": "https://repo.sourcify.dev/4663/0x2e9addc98b4c8d0e5fbbcb80f982a0b3c4983c3d"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x2e9addc98b4c8d0e5fbbcb80f982a0b3c4983c3d?tab=contract"
+      }
+    },
+    {
+      "family": "cSGOV",
+      "component": "feeLedger",
+      "address": "0x51edfe834ac3cf3db9951b1d554d6717dd550264",
+      "creationTransactionHash": "0x64c575a8aa4ccb884acd479bc3dd6a9300decf61857e378c120bac62cba29ef9",
+      "standardInputSha256": "b1b0fc6bd74a45c9e5a4fdb50e1e2ea35b8e8975d2b154a50ca6a14ba10a7b9b",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236944",
+        "verifiedAt": "2026-09-07T12:07:23Z",
+        "checkedAt": "2026-09-07T12:07:48.387Z",
+        "url": "https://repo.sourcify.dev/4663/0x51edfe834ac3cf3db9951b1d554d6717dd550264"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x51edfe834ac3cf3db9951b1d554d6717dd550264?tab=contract"
+      }
+    },
+    {
+      "family": "cSGOV",
+      "component": "releaseController",
+      "address": "0xcfd8da1d20db9051dffec7611fde93c4e2c01b63",
+      "creationTransactionHash": "0x64c575a8aa4ccb884acd479bc3dd6a9300decf61857e378c120bac62cba29ef9",
+      "standardInputSha256": "3456b21c8dca3c69f86c1def512882c8165eff8454915ce811ea78c1f4f1f3b9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236914",
+        "verifiedAt": "2026-09-07T12:07:21Z",
+        "checkedAt": "2026-09-07T12:07:48.448Z",
+        "url": "https://repo.sourcify.dev/4663/0xcfd8da1d20db9051dffec7611fde93c4e2c01b63"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xcfd8da1d20db9051dffec7611fde93c4e2c01b63?tab=contract"
+      }
+    },
+    {
+      "family": "cSLV",
+      "component": "cAsset",
+      "address": "0x2ff495777174a0db364e8c5590d8f99fbe685383",
+      "creationTransactionHash": "0x47df9a01a5f3a290e19f12f0f943c07a9cbafa439e9a3c85c50054cc592fb088",
+      "standardInputSha256": "510a7671432c5107dbb58d055e1e733ddd6d4682c9e865620225466ae3d538a9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236920",
+        "verifiedAt": "2026-09-07T12:07:21Z",
+        "checkedAt": "2026-09-07T12:07:48.448Z",
+        "url": "https://repo.sourcify.dev/4663/0x2ff495777174a0db364e8c5590d8f99fbe685383"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x2ff495777174a0db364e8c5590d8f99fbe685383?tab=contract"
+      }
+    },
+    {
+      "family": "cSLV",
+      "component": "releaseVault",
+      "address": "0x2685bb1cee4ade8ee1fddacaa0a640d6add407e5",
+      "creationTransactionHash": "0x47df9a01a5f3a290e19f12f0f943c07a9cbafa439e9a3c85c50054cc592fb088",
+      "standardInputSha256": "a9a50848f1225f2076bbe3e5fd008a18baa10733da1db598893b83f178f21b02",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236910",
+        "verifiedAt": "2026-09-07T12:07:20Z",
+        "checkedAt": "2026-09-07T12:07:48.510Z",
+        "url": "https://repo.sourcify.dev/4663/0x2685bb1cee4ade8ee1fddacaa0a640d6add407e5"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x2685bb1cee4ade8ee1fddacaa0a640d6add407e5?tab=contract"
+      }
+    },
+    {
+      "family": "cSLV",
+      "component": "reserveVault",
+      "address": "0x5c53bd85dcec8c15ba0d89d0e921ec27c01f42f0",
+      "creationTransactionHash": "0x47df9a01a5f3a290e19f12f0f943c07a9cbafa439e9a3c85c50054cc592fb088",
+      "standardInputSha256": "0ff31821d1dad4a0ce5ac00e243f5e3b80e07ca69e6fd4522ce8c69e1f7fa776",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236911",
+        "verifiedAt": "2026-09-07T12:07:21Z",
+        "checkedAt": "2026-09-07T12:07:48.510Z",
+        "url": "https://repo.sourcify.dev/4663/0x5c53bd85dcec8c15ba0d89d0e921ec27c01f42f0"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x5c53bd85dcec8c15ba0d89d0e921ec27c01f42f0?tab=contract"
+      }
+    },
+    {
+      "family": "cSLV",
+      "component": "hook",
+      "address": "0x390450501a6d939f52642e7a216c017f204e00cc",
+      "creationTransactionHash": "0x47df9a01a5f3a290e19f12f0f943c07a9cbafa439e9a3c85c50054cc592fb088",
+      "standardInputSha256": "662e384c1f05a56f92777710309f51c55d5fadbbbdb68977946889c710d53361",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236977",
+        "verifiedAt": "2026-09-07T12:07:24Z",
+        "checkedAt": "2026-09-07T12:07:48.562Z",
+        "url": "https://repo.sourcify.dev/4663/0x390450501a6d939f52642e7a216c017f204e00cc"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x390450501a6d939f52642e7a216c017f204e00cc?tab=contract"
+      }
+    },
+    {
+      "family": "cSLV",
+      "component": "liquidityLocker",
+      "address": "0xc96b566aa58735e48a7b41ce9f7bbc3a6850168c",
+      "creationTransactionHash": "0x47df9a01a5f3a290e19f12f0f943c07a9cbafa439e9a3c85c50054cc592fb088",
+      "standardInputSha256": "b9fa74ae5ef1b849c1911490b1d87d43dd3bf3ca9be57df74b6428e2ad30bb12",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236927",
+        "verifiedAt": "2026-09-07T12:07:22Z",
+        "checkedAt": "2026-09-07T12:07:48.562Z",
+        "url": "https://repo.sourcify.dev/4663/0xc96b566aa58735e48a7b41ce9f7bbc3a6850168c"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xc96b566aa58735e48a7b41ce9f7bbc3a6850168c?tab=contract"
+      }
+    },
+    {
+      "family": "cSLV",
+      "component": "feeLedger",
+      "address": "0x387b65f2c2639205d2d1aab07863f54653e7f790",
+      "creationTransactionHash": "0x47df9a01a5f3a290e19f12f0f943c07a9cbafa439e9a3c85c50054cc592fb088",
+      "standardInputSha256": "b1b0fc6bd74a45c9e5a4fdb50e1e2ea35b8e8975d2b154a50ca6a14ba10a7b9b",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236915",
+        "verifiedAt": "2026-09-07T12:07:21Z",
+        "checkedAt": "2026-09-07T12:07:48.614Z",
+        "url": "https://repo.sourcify.dev/4663/0x387b65f2c2639205d2d1aab07863f54653e7f790"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x387b65f2c2639205d2d1aab07863f54653e7f790?tab=contract"
+      }
+    },
+    {
+      "family": "cSLV",
+      "component": "releaseController",
+      "address": "0x00269e0acf8c40e3595d3566f83b467e68461490",
+      "creationTransactionHash": "0x47df9a01a5f3a290e19f12f0f943c07a9cbafa439e9a3c85c50054cc592fb088",
+      "standardInputSha256": "3456b21c8dca3c69f86c1def512882c8165eff8454915ce811ea78c1f4f1f3b9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236947",
+        "verifiedAt": "2026-09-07T12:07:23Z",
+        "checkedAt": "2026-09-07T12:07:48.615Z",
+        "url": "https://repo.sourcify.dev/4663/0x00269e0acf8c40e3595d3566f83b467e68461490"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x00269e0acf8c40e3595d3566f83b467e68461490?tab=contract"
+      }
+    },
+    {
+      "family": "cETH",
+      "component": "cAsset",
+      "address": "0x7bdd230ac2e10f03ca3b1500ae72e3029dd706dc",
+      "creationTransactionHash": "0xd9415af9190cb7d27758c69a78441caa28d35ab96f2a59bcf57cab4a054e041a",
+      "standardInputSha256": "510a7671432c5107dbb58d055e1e733ddd6d4682c9e865620225466ae3d538a9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236925",
+        "verifiedAt": "2026-09-07T12:07:21Z",
+        "checkedAt": "2026-09-07T12:07:48.678Z",
+        "url": "https://repo.sourcify.dev/4663/0x7bdd230ac2e10f03ca3b1500ae72e3029dd706dc"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x7bdd230ac2e10f03ca3b1500ae72e3029dd706dc?tab=contract"
+      }
+    },
+    {
+      "family": "cETH",
+      "component": "releaseVault",
+      "address": "0x97be57587af5ae1e368a4d67931cd52e93de8386",
+      "creationTransactionHash": "0xd9415af9190cb7d27758c69a78441caa28d35ab96f2a59bcf57cab4a054e041a",
+      "standardInputSha256": "a9a50848f1225f2076bbe3e5fd008a18baa10733da1db598893b83f178f21b02",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236923",
+        "verifiedAt": "2026-09-07T12:07:21Z",
+        "checkedAt": "2026-09-07T12:07:48.679Z",
+        "url": "https://repo.sourcify.dev/4663/0x97be57587af5ae1e368a4d67931cd52e93de8386"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x97be57587af5ae1e368a4d67931cd52e93de8386?tab=contract"
+      }
+    },
+    {
+      "family": "cETH",
+      "component": "reserveVault",
+      "address": "0xd8dbfe31dd356a9e5cff9bc1c8bd4a1357efaa59",
+      "creationTransactionHash": "0xd9415af9190cb7d27758c69a78441caa28d35ab96f2a59bcf57cab4a054e041a",
+      "standardInputSha256": "0ff31821d1dad4a0ce5ac00e243f5e3b80e07ca69e6fd4522ce8c69e1f7fa776",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236917",
+        "verifiedAt": "2026-09-07T12:07:21Z",
+        "checkedAt": "2026-09-07T12:07:48.736Z",
+        "url": "https://repo.sourcify.dev/4663/0xd8dbfe31dd356a9e5cff9bc1c8bd4a1357efaa59"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xd8dbfe31dd356a9e5cff9bc1c8bd4a1357efaa59?tab=contract"
+      }
+    },
+    {
+      "family": "cETH",
+      "component": "hook",
+      "address": "0x2dfc9d8e6d425f6a4e54e40f9343ce1db5c780cc",
+      "creationTransactionHash": "0xd9415af9190cb7d27758c69a78441caa28d35ab96f2a59bcf57cab4a054e041a",
+      "standardInputSha256": "662e384c1f05a56f92777710309f51c55d5fadbbbdb68977946889c710d53361",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236935",
+        "verifiedAt": "2026-09-07T12:07:22Z",
+        "checkedAt": "2026-09-07T12:07:48.737Z",
+        "url": "https://repo.sourcify.dev/4663/0x2dfc9d8e6d425f6a4e54e40f9343ce1db5c780cc"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x2dfc9d8e6d425f6a4e54e40f9343ce1db5c780cc?tab=contract"
+      }
+    },
+    {
+      "family": "cETH",
+      "component": "liquidityLocker",
+      "address": "0xba0e59825edb14283f3205d1ff366891b2f7d68c",
+      "creationTransactionHash": "0xd9415af9190cb7d27758c69a78441caa28d35ab96f2a59bcf57cab4a054e041a",
+      "standardInputSha256": "b9fa74ae5ef1b849c1911490b1d87d43dd3bf3ca9be57df74b6428e2ad30bb12",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236945",
+        "verifiedAt": "2026-09-07T12:07:23Z",
+        "checkedAt": "2026-09-07T12:07:48.800Z",
+        "url": "https://repo.sourcify.dev/4663/0xba0e59825edb14283f3205d1ff366891b2f7d68c"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xba0e59825edb14283f3205d1ff366891b2f7d68c?tab=contract"
+      }
+    },
+    {
+      "family": "cETH",
+      "component": "feeLedger",
+      "address": "0xd14bfc8228315dfb07b3f3e5c559ccfff1b45f3b",
+      "creationTransactionHash": "0xd9415af9190cb7d27758c69a78441caa28d35ab96f2a59bcf57cab4a054e041a",
+      "standardInputSha256": "b1b0fc6bd74a45c9e5a4fdb50e1e2ea35b8e8975d2b154a50ca6a14ba10a7b9b",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236936",
+        "verifiedAt": "2026-09-07T12:07:22Z",
+        "checkedAt": "2026-09-07T12:07:48.801Z",
+        "url": "https://repo.sourcify.dev/4663/0xd14bfc8228315dfb07b3f3e5c559ccfff1b45f3b"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xd14bfc8228315dfb07b3f3e5c559ccfff1b45f3b?tab=contract"
+      }
+    },
+    {
+      "family": "cETH",
+      "component": "releaseController",
+      "address": "0x9ca152243a9ac72d4f138418bd761f3c6447509f",
+      "creationTransactionHash": "0xd9415af9190cb7d27758c69a78441caa28d35ab96f2a59bcf57cab4a054e041a",
+      "standardInputSha256": "3456b21c8dca3c69f86c1def512882c8165eff8454915ce811ea78c1f4f1f3b9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236951",
+        "verifiedAt": "2026-09-07T12:07:23Z",
+        "checkedAt": "2026-09-07T12:07:48.861Z",
+        "url": "https://repo.sourcify.dev/4663/0x9ca152243a9ac72d4f138418bd761f3c6447509f"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x9ca152243a9ac72d4f138418bd761f3c6447509f?tab=contract"
+      }
+    },
+    {
+      "family": "cPONS",
+      "component": "cAsset",
+      "address": "0x1b00622c9a3359261c19d3a6c3a2441073e250fb",
+      "creationTransactionHash": "0x45d11734f02d7c0c7e04414fffd0748f2a494ce2f17fbb9d35bd9a2a560787a5",
+      "standardInputSha256": "510a7671432c5107dbb58d055e1e733ddd6d4682c9e865620225466ae3d538a9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236924",
+        "verifiedAt": "2026-09-07T12:07:21Z",
+        "checkedAt": "2026-09-07T12:07:48.862Z",
+        "url": "https://repo.sourcify.dev/4663/0x1b00622c9a3359261c19d3a6c3a2441073e250fb"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x1b00622c9a3359261c19d3a6c3a2441073e250fb?tab=contract"
+      }
+    },
+    {
+      "family": "cPONS",
+      "component": "releaseVault",
+      "address": "0xe62dd7bf110c8d5d63fe321adee7c4d1ee997235",
+      "creationTransactionHash": "0x45d11734f02d7c0c7e04414fffd0748f2a494ce2f17fbb9d35bd9a2a560787a5",
+      "standardInputSha256": "a9a50848f1225f2076bbe3e5fd008a18baa10733da1db598893b83f178f21b02",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236918",
+        "verifiedAt": "2026-09-07T12:07:21Z",
+        "checkedAt": "2026-09-07T12:07:48.913Z",
+        "url": "https://repo.sourcify.dev/4663/0xe62dd7bf110c8d5d63fe321adee7c4d1ee997235"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xe62dd7bf110c8d5d63fe321adee7c4d1ee997235?tab=contract"
+      }
+    },
+    {
+      "family": "cPONS",
+      "component": "reserveVault",
+      "address": "0x7624045c09bf69e540ad7b22fe2bb61bcfd9e659",
+      "creationTransactionHash": "0x45d11734f02d7c0c7e04414fffd0748f2a494ce2f17fbb9d35bd9a2a560787a5",
+      "standardInputSha256": "0ff31821d1dad4a0ce5ac00e243f5e3b80e07ca69e6fd4522ce8c69e1f7fa776",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236916",
+        "verifiedAt": "2026-09-07T12:07:21Z",
+        "checkedAt": "2026-09-07T12:07:48.914Z",
+        "url": "https://repo.sourcify.dev/4663/0x7624045c09bf69e540ad7b22fe2bb61bcfd9e659"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x7624045c09bf69e540ad7b22fe2bb61bcfd9e659?tab=contract"
+      }
+    },
+    {
+      "family": "cPONS",
+      "component": "hook",
+      "address": "0x732ea1fcef546dfecbb90fd350fe09e3ebac80cc",
+      "creationTransactionHash": "0x45d11734f02d7c0c7e04414fffd0748f2a494ce2f17fbb9d35bd9a2a560787a5",
+      "standardInputSha256": "662e384c1f05a56f92777710309f51c55d5fadbbbdb68977946889c710d53361",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236978",
+        "verifiedAt": "2026-09-07T12:07:25Z",
+        "checkedAt": "2026-09-07T12:07:48.970Z",
+        "url": "https://repo.sourcify.dev/4663/0x732ea1fcef546dfecbb90fd350fe09e3ebac80cc"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x732ea1fcef546dfecbb90fd350fe09e3ebac80cc?tab=contract"
+      }
+    },
+    {
+      "family": "cPONS",
+      "component": "liquidityLocker",
+      "address": "0x2e7b85a0db78e0f312005413165a3e8e59559c70",
+      "creationTransactionHash": "0x45d11734f02d7c0c7e04414fffd0748f2a494ce2f17fbb9d35bd9a2a560787a5",
+      "standardInputSha256": "b9fa74ae5ef1b849c1911490b1d87d43dd3bf3ca9be57df74b6428e2ad30bb12",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236965",
+        "verifiedAt": "2026-09-07T12:07:24Z",
+        "checkedAt": "2026-09-07T12:07:48.971Z",
+        "url": "https://repo.sourcify.dev/4663/0x2e7b85a0db78e0f312005413165a3e8e59559c70"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x2e7b85a0db78e0f312005413165a3e8e59559c70?tab=contract"
+      }
+    },
+    {
+      "family": "cPONS",
+      "component": "feeLedger",
+      "address": "0x4c8aefc707b7c915ef5aff3da3ae41f61d7ccdc8",
+      "creationTransactionHash": "0x45d11734f02d7c0c7e04414fffd0748f2a494ce2f17fbb9d35bd9a2a560787a5",
+      "standardInputSha256": "b1b0fc6bd74a45c9e5a4fdb50e1e2ea35b8e8975d2b154a50ca6a14ba10a7b9b",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236938",
+        "verifiedAt": "2026-09-07T12:07:22Z",
+        "checkedAt": "2026-09-07T12:07:49.024Z",
+        "url": "https://repo.sourcify.dev/4663/0x4c8aefc707b7c915ef5aff3da3ae41f61d7ccdc8"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x4c8aefc707b7c915ef5aff3da3ae41f61d7ccdc8?tab=contract"
+      }
+    },
+    {
+      "family": "cPONS",
+      "component": "releaseController",
+      "address": "0xc4b9ddc2ef9637577fa22fab81d4446bf100d7e0",
+      "creationTransactionHash": "0x45d11734f02d7c0c7e04414fffd0748f2a494ce2f17fbb9d35bd9a2a560787a5",
+      "standardInputSha256": "3456b21c8dca3c69f86c1def512882c8165eff8454915ce811ea78c1f4f1f3b9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236942",
+        "verifiedAt": "2026-09-07T12:07:22Z",
+        "checkedAt": "2026-09-07T12:07:49.024Z",
+        "url": "https://repo.sourcify.dev/4663/0xc4b9ddc2ef9637577fa22fab81d4446bf100d7e0"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xc4b9ddc2ef9637577fa22fab81d4446bf100d7e0?tab=contract"
+      }
+    },
+    {
+      "family": "cSPCX",
+      "component": "cAsset",
+      "address": "0x76be0151a6a09d3da4adef47ab548b52546ce10d",
+      "creationTransactionHash": "0x07b052a2dbbf8d28b75b10831019d8462fd6244302e61c6af5afdd3ff795de6c",
+      "standardInputSha256": "510a7671432c5107dbb58d055e1e733ddd6d4682c9e865620225466ae3d538a9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236948",
+        "verifiedAt": "2026-09-07T12:07:23Z",
+        "checkedAt": "2026-09-07T12:07:49.075Z",
+        "url": "https://repo.sourcify.dev/4663/0x76be0151a6a09d3da4adef47ab548b52546ce10d"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x76be0151a6a09d3da4adef47ab548b52546ce10d?tab=contract"
+      }
+    },
+    {
+      "family": "cSPCX",
+      "component": "releaseVault",
+      "address": "0x152cda992084085dccdf84e89837b21d33ac3887",
+      "creationTransactionHash": "0x07b052a2dbbf8d28b75b10831019d8462fd6244302e61c6af5afdd3ff795de6c",
+      "standardInputSha256": "a9a50848f1225f2076bbe3e5fd008a18baa10733da1db598893b83f178f21b02",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236928",
+        "verifiedAt": "2026-09-07T12:07:22Z",
+        "checkedAt": "2026-09-07T12:07:49.077Z",
+        "url": "https://repo.sourcify.dev/4663/0x152cda992084085dccdf84e89837b21d33ac3887"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x152cda992084085dccdf84e89837b21d33ac3887?tab=contract"
+      }
+    },
+    {
+      "family": "cSPCX",
+      "component": "reserveVault",
+      "address": "0x023eabeb0ed4c2aabef7e67491f4359b4eab6515",
+      "creationTransactionHash": "0x07b052a2dbbf8d28b75b10831019d8462fd6244302e61c6af5afdd3ff795de6c",
+      "standardInputSha256": "0ff31821d1dad4a0ce5ac00e243f5e3b80e07ca69e6fd4522ce8c69e1f7fa776",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236921",
+        "verifiedAt": "2026-09-07T12:07:21Z",
+        "checkedAt": "2026-09-07T12:07:49.133Z",
+        "url": "https://repo.sourcify.dev/4663/0x023eabeb0ed4c2aabef7e67491f4359b4eab6515"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x023eabeb0ed4c2aabef7e67491f4359b4eab6515?tab=contract"
+      }
+    },
+    {
+      "family": "cSPCX",
+      "component": "hook",
+      "address": "0x1fe80095a6c4e0bb562669577eb5e29e843980cc",
+      "creationTransactionHash": "0x07b052a2dbbf8d28b75b10831019d8462fd6244302e61c6af5afdd3ff795de6c",
+      "standardInputSha256": "662e384c1f05a56f92777710309f51c55d5fadbbbdb68977946889c710d53361",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236943",
+        "verifiedAt": "2026-09-07T12:07:23Z",
+        "checkedAt": "2026-09-07T12:07:49.133Z",
+        "url": "https://repo.sourcify.dev/4663/0x1fe80095a6c4e0bb562669577eb5e29e843980cc"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x1fe80095a6c4e0bb562669577eb5e29e843980cc?tab=contract"
+      }
+    },
+    {
+      "family": "cSPCX",
+      "component": "liquidityLocker",
+      "address": "0x727b8c8527c0e0b0792b6b50631dd7927575af41",
+      "creationTransactionHash": "0x07b052a2dbbf8d28b75b10831019d8462fd6244302e61c6af5afdd3ff795de6c",
+      "standardInputSha256": "b9fa74ae5ef1b849c1911490b1d87d43dd3bf3ca9be57df74b6428e2ad30bb12",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236933",
+        "verifiedAt": "2026-09-07T12:07:22Z",
+        "checkedAt": "2026-09-07T12:07:49.186Z",
+        "url": "https://repo.sourcify.dev/4663/0x727b8c8527c0e0b0792b6b50631dd7927575af41"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x727b8c8527c0e0b0792b6b50631dd7927575af41?tab=contract"
+      }
+    },
+    {
+      "family": "cSPCX",
+      "component": "feeLedger",
+      "address": "0x54c5f0fd643b426d5115e64efe384524e8a158da",
+      "creationTransactionHash": "0x07b052a2dbbf8d28b75b10831019d8462fd6244302e61c6af5afdd3ff795de6c",
+      "standardInputSha256": "b1b0fc6bd74a45c9e5a4fdb50e1e2ea35b8e8975d2b154a50ca6a14ba10a7b9b",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236931",
+        "verifiedAt": "2026-09-07T12:07:22Z",
+        "checkedAt": "2026-09-07T12:07:49.187Z",
+        "url": "https://repo.sourcify.dev/4663/0x54c5f0fd643b426d5115e64efe384524e8a158da"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x54c5f0fd643b426d5115e64efe384524e8a158da?tab=contract"
+      }
+    },
+    {
+      "family": "cSPCX",
+      "component": "releaseController",
+      "address": "0xb89539ce57d40528e8c2f734e8fb32c583633604",
+      "creationTransactionHash": "0x07b052a2dbbf8d28b75b10831019d8462fd6244302e61c6af5afdd3ff795de6c",
+      "standardInputSha256": "3456b21c8dca3c69f86c1def512882c8165eff8454915ce811ea78c1f4f1f3b9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236934",
+        "verifiedAt": "2026-09-07T12:07:22Z",
+        "checkedAt": "2026-09-07T12:07:49.266Z",
+        "url": "https://repo.sourcify.dev/4663/0xb89539ce57d40528e8c2f734e8fb32c583633604"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xb89539ce57d40528e8c2f734e8fb32c583633604?tab=contract"
+      }
+    },
+    {
+      "family": "cTSLA",
+      "component": "cAsset",
+      "address": "0x96bee785764c73d300863032eaf99d6c31fd6d9b",
+      "creationTransactionHash": "0xce52ae61a5e3eb6b02ccc760e55f983cc2873cb76cbb4752d62f2d20f76f2cee",
+      "standardInputSha256": "510a7671432c5107dbb58d055e1e733ddd6d4682c9e865620225466ae3d538a9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236929",
+        "verifiedAt": "2026-09-07T12:07:22Z",
+        "checkedAt": "2026-09-07T12:07:49.267Z",
+        "url": "https://repo.sourcify.dev/4663/0x96bee785764c73d300863032eaf99d6c31fd6d9b"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x96bee785764c73d300863032eaf99d6c31fd6d9b?tab=contract"
+      }
+    },
+    {
+      "family": "cTSLA",
+      "component": "releaseVault",
+      "address": "0x9b24e0ec61be8012c9e9015b254c5dac0535b3ac",
+      "creationTransactionHash": "0xce52ae61a5e3eb6b02ccc760e55f983cc2873cb76cbb4752d62f2d20f76f2cee",
+      "standardInputSha256": "a9a50848f1225f2076bbe3e5fd008a18baa10733da1db598893b83f178f21b02",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236932",
+        "verifiedAt": "2026-09-07T12:07:22Z",
+        "checkedAt": "2026-09-07T12:07:49.357Z",
+        "url": "https://repo.sourcify.dev/4663/0x9b24e0ec61be8012c9e9015b254c5dac0535b3ac"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x9b24e0ec61be8012c9e9015b254c5dac0535b3ac?tab=contract"
+      }
+    },
+    {
+      "family": "cTSLA",
+      "component": "reserveVault",
+      "address": "0xe5edcabe387c3e56bc014ba3802ab6cc6e7a891a",
+      "creationTransactionHash": "0xce52ae61a5e3eb6b02ccc760e55f983cc2873cb76cbb4752d62f2d20f76f2cee",
+      "standardInputSha256": "0ff31821d1dad4a0ce5ac00e243f5e3b80e07ca69e6fd4522ce8c69e1f7fa776",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236926",
+        "verifiedAt": "2026-09-07T12:07:22Z",
+        "checkedAt": "2026-09-07T12:07:49.358Z",
+        "url": "https://repo.sourcify.dev/4663/0xe5edcabe387c3e56bc014ba3802ab6cc6e7a891a"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xe5edcabe387c3e56bc014ba3802ab6cc6e7a891a?tab=contract"
+      }
+    },
+    {
+      "family": "cTSLA",
+      "component": "hook",
+      "address": "0x33c47df31f2ef88c95b87d5cd8e9e6ed828100cc",
+      "creationTransactionHash": "0xce52ae61a5e3eb6b02ccc760e55f983cc2873cb76cbb4752d62f2d20f76f2cee",
+      "standardInputSha256": "662e384c1f05a56f92777710309f51c55d5fadbbbdb68977946889c710d53361",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236966",
+        "verifiedAt": "2026-09-07T12:07:23Z",
+        "checkedAt": "2026-09-07T12:07:49.408Z",
+        "url": "https://repo.sourcify.dev/4663/0x33c47df31f2ef88c95b87d5cd8e9e6ed828100cc"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x33c47df31f2ef88c95b87d5cd8e9e6ed828100cc?tab=contract"
+      }
+    },
+    {
+      "family": "cTSLA",
+      "component": "liquidityLocker",
+      "address": "0xe6e2e66b83a591a4d869c38fe273ecde3e7ea8ce",
+      "creationTransactionHash": "0xce52ae61a5e3eb6b02ccc760e55f983cc2873cb76cbb4752d62f2d20f76f2cee",
+      "standardInputSha256": "b9fa74ae5ef1b849c1911490b1d87d43dd3bf3ca9be57df74b6428e2ad30bb12",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236940",
+        "verifiedAt": "2026-09-07T12:07:22Z",
+        "checkedAt": "2026-09-07T12:07:49.408Z",
+        "url": "https://repo.sourcify.dev/4663/0xe6e2e66b83a591a4d869c38fe273ecde3e7ea8ce"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0xe6e2e66b83a591a4d869c38fe273ecde3e7ea8ce?tab=contract"
+      }
+    },
+    {
+      "family": "cTSLA",
+      "component": "feeLedger",
+      "address": "0x732b4b6aa8cb1f1e72618f2a88fa5aed17fbd4d4",
+      "creationTransactionHash": "0xce52ae61a5e3eb6b02ccc760e55f983cc2873cb76cbb4752d62f2d20f76f2cee",
+      "standardInputSha256": "b1b0fc6bd74a45c9e5a4fdb50e1e2ea35b8e8975d2b154a50ca6a14ba10a7b9b",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236969",
+        "verifiedAt": "2026-09-07T12:07:24Z",
+        "checkedAt": "2026-09-07T12:07:49.458Z",
+        "url": "https://repo.sourcify.dev/4663/0x732b4b6aa8cb1f1e72618f2a88fa5aed17fbd4d4"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x732b4b6aa8cb1f1e72618f2a88fa5aed17fbd4d4?tab=contract"
+      }
+    },
+    {
+      "family": "cTSLA",
+      "component": "releaseController",
+      "address": "0x0883d647fec043038e3ab6c9da35946312a4ae43",
+      "creationTransactionHash": "0xce52ae61a5e3eb6b02ccc760e55f983cc2873cb76cbb4752d62f2d20f76f2cee",
+      "standardInputSha256": "3456b21c8dca3c69f86c1def512882c8165eff8454915ce811ea78c1f4f1f3b9",
+      "sourcify": {
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "matchId": "47236970",
+        "verifiedAt": "2026-09-07T12:07:24Z",
+        "checkedAt": "2026-09-07T12:07:49.459Z",
+        "url": "https://repo.sourcify.dev/4663/0x0883d647fec043038e3ab6c9da35946312a4ae43"
+      },
+      "blockscout": {
+        "status": "not-individually-rechecked-in-this-pass",
+        "url": "https://robinhoodchain.blockscout.com/address/0x0883d647fec043038e3ab6c9da35946312a4ae43?tab=contract"
+      }
+    }
+  ],
+  "depots": [
+    {
+      "component": "cAsset",
+      "address": "0xee0dfc011d4ca017357e37af5939c02ab6c1deba",
+      "creationTransactionHash": "0x33c9211accd1ad691095fcebe77cff2a9c39b61b3927e45a3dfc8722866a9d92",
+      "blockscout": {
+        "status": "partial_match",
+        "checkedAt": "2026-09-07T12:13:43.927Z",
+        "url": "https://robinhoodchain.blockscout.com/address/0xee0dfc011d4ca017357e37af5939c02ab6c1deba?tab=contract"
+      },
+      "sourcify": {
+        "status": "bytecode_length_mismatch",
+        "checkedAt": "2026-09-07T12:07:47.098Z"
+      },
+      "payload": {
+        "artifact": "src/CatchAsset.sol:CatchAsset",
+        "byteForByteMatch": true,
+        "runtimeCodeHash": "0xcad2f85eb51438699527737927ecce14ac3ec1e98f3a2cf1400ba7c64191ce5a",
+        "componentCreationKeccak256": "0xcad2f85eb51438699527737927ecce14ac3ec1e98f3a2cf1400ba7c64191ce5a",
+        "pinnedRuntimeCodeHash": "0xcad2f85eb51438699527737927ecce14ac3ec1e98f3a2cf1400ba7c64191ce5a",
+        "onchainRuntimeBytes": 3296,
+        "componentCreationBytes": 3296
+      }
+    },
+    {
+      "component": "releaseVault",
+      "address": "0x305b95984c35309d845c6dc7c898c339076b3623",
+      "creationTransactionHash": "0x1e562a44828845ac25c1d4e233653e27b92fa4e3979fe99e8fb7b610f2df9dab",
+      "blockscout": {
+        "status": "partial_match",
+        "checkedAt": "2026-09-07T12:10:29.097Z",
+        "url": "https://robinhoodchain.blockscout.com/address/0x305b95984c35309d845c6dc7c898c339076b3623?tab=contract"
+      },
+      "sourcify": {
+        "status": "bytecode_length_mismatch",
+        "checkedAt": "2026-09-07T12:07:47.134Z"
+      },
+      "payload": {
+        "artifact": "src/CatchAssetEmissionVault.sol:CatchAssetEmissionVault",
+        "byteForByteMatch": true,
+        "runtimeCodeHash": "0xce222100786f029bb26c63b7ced4141eb79e2753a34799a895f11aac518ad908",
+        "componentCreationKeccak256": "0xce222100786f029bb26c63b7ced4141eb79e2753a34799a895f11aac518ad908",
+        "pinnedRuntimeCodeHash": "0xce222100786f029bb26c63b7ced4141eb79e2753a34799a895f11aac518ad908",
+        "onchainRuntimeBytes": 1442,
+        "componentCreationBytes": 1442
+      }
+    },
+    {
+      "component": "reserveVault",
+      "address": "0xb95c2090fc598f6c55f8d6b7098672cb1200e6d1",
+      "creationTransactionHash": "0x29290e105bb8a644beb08439e81c6bc116603d962b0c36707c0bbd0779a07355",
+      "blockscout": {
+        "status": "partial_match",
+        "checkedAt": "2026-09-07T12:10:51.169Z",
+        "url": "https://robinhoodchain.blockscout.com/address/0xb95c2090fc598f6c55f8d6b7098672cb1200e6d1?tab=contract"
+      },
+      "sourcify": {
+        "status": "bytecode_length_mismatch",
+        "checkedAt": "2026-09-07T12:07:47.220Z"
+      },
+      "payload": {
+        "artifact": "src/CatchAssetReserveVault.sol:CatchAssetReserveVault",
+        "byteForByteMatch": true,
+        "runtimeCodeHash": "0x19ab5672fb42ca96456f352724e7fe0ae2cf545f194f06d54c4b78d73802550a",
+        "componentCreationKeccak256": "0x19ab5672fb42ca96456f352724e7fe0ae2cf545f194f06d54c4b78d73802550a",
+        "pinnedRuntimeCodeHash": "0x19ab5672fb42ca96456f352724e7fe0ae2cf545f194f06d54c4b78d73802550a",
+        "onchainRuntimeBytes": 2624,
+        "componentCreationBytes": 2624
+      }
+    },
+    {
+      "component": "hook",
+      "address": "0x9291f78e92a4bfc92b0dfc637b07604721ab8654",
+      "creationTransactionHash": "0x7904c3b3ec3be6c67fecd5f8f6d7f47f80f2dd6f46a5ca3a449c621480754958",
+      "blockscout": {
+        "status": "partial_match",
+        "checkedAt": "2026-09-07T12:11:11.714Z",
+        "url": "https://robinhoodchain.blockscout.com/address/0x9291f78e92a4bfc92b0dfc637b07604721ab8654?tab=contract"
+      },
+      "sourcify": {
+        "status": "bytecode_length_mismatch",
+        "checkedAt": "2026-09-07T12:07:47.221Z"
+      },
+      "payload": {
+        "artifact": "src/vnext/CatchFamilyHookV1.sol:CatchFamilyHookV1",
+        "byteForByteMatch": true,
+        "runtimeCodeHash": "0x40e033875b7a39f6c3921fa58e6666b4c10edd40efcb4cc70513b00e191e6fe4",
+        "componentCreationKeccak256": "0x40e033875b7a39f6c3921fa58e6666b4c10edd40efcb4cc70513b00e191e6fe4",
+        "pinnedRuntimeCodeHash": "0x40e033875b7a39f6c3921fa58e6666b4c10edd40efcb4cc70513b00e191e6fe4",
+        "onchainRuntimeBytes": 6984,
+        "componentCreationBytes": 6984
+      }
+    },
+    {
+      "component": "liquidityLocker",
+      "address": "0xdacbc74b7b2e62c4ac8d853f1fdbc6995d19c7fc",
+      "creationTransactionHash": "0xfd5b8a8747ca3707b813db86e398ea6d25a9f5f0ffe7dc74a14cb7d0cd6cf4d5",
+      "blockscout": {
+        "status": "partial_match",
+        "checkedAt": "2026-09-07T12:11:41.196Z",
+        "url": "https://robinhoodchain.blockscout.com/address/0xdacbc74b7b2e62c4ac8d853f1fdbc6995d19c7fc?tab=contract"
+      },
+      "sourcify": {
+        "status": "bytecode_length_mismatch",
+        "checkedAt": "2026-09-07T12:07:47.272Z"
+      },
+      "payload": {
+        "artifact": "src/vnext/CatchFamilyLiquidityLockerV1.sol:CatchFamilyLiquidityLockerV1",
+        "byteForByteMatch": true,
+        "runtimeCodeHash": "0x014fadf703f1cf17dc091ae5f13ccfdb640bc3c24e5de3df26292656b45177c0",
+        "componentCreationKeccak256": "0x014fadf703f1cf17dc091ae5f13ccfdb640bc3c24e5de3df26292656b45177c0",
+        "pinnedRuntimeCodeHash": "0x014fadf703f1cf17dc091ae5f13ccfdb640bc3c24e5de3df26292656b45177c0",
+        "onchainRuntimeBytes": 7143,
+        "componentCreationBytes": 7143
+      }
+    },
+    {
+      "component": "feeLedger",
+      "address": "0x0380d146e0860e05e13cdbbaf62d4457c039850e",
+      "creationTransactionHash": "0x034b24018ae3cd5f5d393fffd455e0435cd87edfd8a6de7c6a121b9b06fc5c53",
+      "blockscout": {
+        "status": "partial_match",
+        "checkedAt": "2026-09-07T12:12:44.552Z",
+        "url": "https://robinhoodchain.blockscout.com/address/0x0380d146e0860e05e13cdbbaf62d4457c039850e?tab=contract"
+      },
+      "sourcify": {
+        "status": "bytecode_length_mismatch",
+        "checkedAt": "2026-09-07T12:07:47.272Z"
+      },
+      "payload": {
+        "artifact": "src/vnext/CatchFamilyFeeLedgerV1.sol:CatchFamilyFeeLedgerV1",
+        "byteForByteMatch": true,
+        "runtimeCodeHash": "0xcc7461ee57914486343224a5ef90325ad649e423abc8f6f0bc7dd2526a511c3f",
+        "componentCreationKeccak256": "0xcc7461ee57914486343224a5ef90325ad649e423abc8f6f0bc7dd2526a511c3f",
+        "pinnedRuntimeCodeHash": "0xcc7461ee57914486343224a5ef90325ad649e423abc8f6f0bc7dd2526a511c3f",
+        "onchainRuntimeBytes": 6197,
+        "componentCreationBytes": 6197
+      }
+    },
+    {
+      "component": "releaseController",
+      "address": "0xd5d6aa0616f5e59e5abd45e2659af7c1f4a24542",
+      "creationTransactionHash": "0x5865318db2eb83b6136046229b2c8c6e30f7a8848ffa387d257efc1a157c143a",
+      "blockscout": {
+        "status": "partial_match",
+        "checkedAt": "2026-09-07T12:13:27.294Z",
+        "url": "https://robinhoodchain.blockscout.com/address/0xd5d6aa0616f5e59e5abd45e2659af7c1f4a24542?tab=contract"
+      },
+      "sourcify": {
+        "status": "bytecode_length_mismatch",
+        "checkedAt": "2026-09-07T12:07:47.323Z"
+      },
+      "payload": {
+        "artifact": "src/vnext/CatchFamilyReleaseControllerV1.sol:CatchFamilyReleaseControllerV1",
+        "byteForByteMatch": true,
+        "runtimeCodeHash": "0xa787193dc358afe84d073f2071b7f15d9596238c64c60ddd419aad5bb92148cb",
+        "componentCreationKeccak256": "0xa787193dc358afe84d073f2071b7f15d9596238c64c60ddd419aad5bb92148cb",
+        "pinnedRuntimeCodeHash": "0xa787193dc358afe84d073f2071b7f15d9596238c64c60ddd419aad5bb92148cb",
+        "onchainRuntimeBytes": 7904,
+        "componentCreationBytes": 7904
+      }
+    }
+  ]
+}

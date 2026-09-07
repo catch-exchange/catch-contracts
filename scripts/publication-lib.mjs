@@ -60,3 +60,63 @@ export function checkArtifact(target, artifact, abi) {
   assert.deepEqual(artifact.abi, abi, `ABI differs: ${target.role}`);
   assert.deepEqual(artifact.evm.deployedBytecode.immutableReferences ?? {}, target.immutableReferences ?? {}, `Immutable layout differs: ${target.role}`);
 }
+
+// Source-publication evidence is separate from launch identities and router admission.
+// Every permitted field is explicit: operator bundles cannot be copied into this record.
+export function validateSourceStatus(value, deployments, build) {
+  validateDeployments(deployments);
+  exactKeys(value, ["schema", "chainId", "checkedAt", "evidenceSha256", "scope", "contracts", "depots"]);
+  assert.equal(value.schema, "catch.public-source-verification.v1");
+  assert.equal(value.chainId, deployments.chainId);
+  const date = text => assert(typeof text === "string" && /^\d{4}-\d{2}-\d{2}T/.test(text) && Number.isFinite(Date.parse(text)), "Invalid evidence timestamp");
+  const address = text => assert(/^0x[0-9a-f]{40}$/.test(text) && !/^0x0{40}$/.test(text), "Expected lowercase address");
+  const digest = text => assert(/^0x[0-9a-f]{64}$/.test(text), "Invalid evidence digest");
+  date(value.checkedAt);
+  assert(/^[0-9a-f]{64}$/.test(value.evidenceSha256), "Invalid evidence checksum");
+  assert.equal(value.scope, "Recorded source correspondence at the stated check times, not an audit, current-state guarantee or router admission.");
+  const expected = new Map([[deployments.factory.address.toLowerCase(), { family: "sharedV1", role: "factory" }]]);
+  for (const f of deployments.families) for (const role of roles) {
+    expected.set(f.contracts[role].address.toLowerCase(), { family: f.symbol, role, transaction: f.launchTransactionHash });
+  }
+  assert(Array.isArray(value.contracts) && value.contracts.length === expected.size, "Incomplete exact-match directory");
+  const seen = new Set();
+  const explorer = a => `https://robinhoodchain.blockscout.com/address/${a}?tab=contract`;
+  for (const c of value.contracts) {
+    exactKeys(c, ["family", "component", "address", "creationTransactionHash", "standardInputSha256", "sourcify", "blockscout"]);
+    address(c.address); digest(c.creationTransactionHash);
+    const identity = expected.get(c.address);
+    assert(identity && !seen.has(c.address), "Unknown/duplicate verified contract");
+    seen.add(c.address);
+    assert.equal(c.family, identity.family); assert.equal(c.component, identity.role);
+    if (identity.transaction) assert.equal(c.creationTransactionHash, identity.transaction);
+    assert.equal(c.standardInputSha256, build.targets.find(t => t.role === identity.role)?.inputSha256);
+    exactKeys(c.sourcify, ["creationMatch", "runtimeMatch", "matchId", "verifiedAt", "checkedAt", "url"]);
+    assert.equal(c.sourcify.creationMatch, "exact_match"); assert.equal(c.sourcify.runtimeMatch, "exact_match");
+    assert(/^[1-9][0-9]*$/.test(c.sourcify.matchId), "Invalid Sourcify match ID");
+    date(c.sourcify.verifiedAt); date(c.sourcify.checkedAt);
+    assert.equal(c.sourcify.url, `https://repo.sourcify.dev/4663/${c.address}`);
+    exactKeys(c.blockscout, ["status", "url"]);
+    assert.equal(c.blockscout.status, "not-individually-rechecked-in-this-pass");
+    assert.equal(c.blockscout.url, explorer(c.address));
+  }
+  assert(Array.isArray(value.depots) && value.depots.length === roles.length, "Incomplete depot directory");
+  const depotRoles = new Set();
+  for (const d of value.depots) {
+    exactKeys(d, ["component", "address", "creationTransactionHash", "blockscout", "sourcify", "payload"]);
+    assert(roles.includes(d.component) && !depotRoles.has(d.component), "Unknown/duplicate depot role");
+    depotRoles.add(d.component); address(d.address); digest(d.creationTransactionHash);
+    assert(!seen.has(d.address), "Duplicate depot address"); seen.add(d.address);
+    exactKeys(d.blockscout, ["status", "checkedAt", "url"]);
+    assert.equal(d.blockscout.status, "partial_match"); date(d.blockscout.checkedAt);
+    assert.equal(d.blockscout.url, explorer(d.address));
+    exactKeys(d.sourcify, ["status", "checkedAt"]);
+    assert.equal(d.sourcify.status, "bytecode_length_mismatch"); date(d.sourcify.checkedAt);
+    const p = d.payload, t = build.targets.find(target => target.role === d.component);
+    exactKeys(p, ["artifact", "byteForByteMatch", "runtimeCodeHash", "componentCreationKeccak256", "pinnedRuntimeCodeHash", "onchainRuntimeBytes", "componentCreationBytes"]);
+    assert.equal(p.artifact, `${t.source}:${t.contract}`); assert.equal(p.byteForByteMatch, true);
+    digest(p.runtimeCodeHash); assert.equal(p.runtimeCodeHash, p.componentCreationKeccak256);
+    assert.equal(p.runtimeCodeHash, p.pinnedRuntimeCodeHash);
+    assert(Number.isSafeInteger(p.onchainRuntimeBytes) && p.onchainRuntimeBytes > 0, "Invalid payload length");
+    assert.equal(p.onchainRuntimeBytes, p.componentCreationBytes);
+  }
+}

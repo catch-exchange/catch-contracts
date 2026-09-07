@@ -3,7 +3,7 @@
   "chainId": 4663,
   "evidenceScope": "Addresses and runtime hashes from previously reconciled launch evidence. This export does not perform a fresh chain check or certify explorer verification.",
   "factory": {
-    "address": "0x21acBCC6227Cf5D2Fb5eB876735edd04F7B49c12",
+    "address": "0x21acbcc6227cf5d2fb5eb876735edd04f7b49c12",
     "runtimeCodeHash": "0xd46e748c768ce986077497f3acf7b3cb07d28f979c94166bacafc3710e6f7729",
     "sourceCommit": "39798b6e95c37d3d28175d498a21c4fe2e7676ba"
   },
@@ -15,31 +15,31 @@
       "poolId": "0xcc2105071ec7f6f18fe5f1e83838ea4ae1c14a6e7be73d06b1ffc2fa3a38a409",
       "contracts": {
         "cAsset": {
-          "address": "0xb44e29A0540c48054d9CaEc192CdBB18c68398eC",
+          "address": "0xb44e29a0540c48054d9caec192cdbb18c68398ec",
           "runtimeCodeHash": "0x953a993b278ab42973626938815d89299154efde4ff8dc1b43cb8a8c0f20a1aa"
         },
         "releaseVault": {
-          "address": "0x05D85A34b8Ae5668A95506eBf3d058763C3BA480",
+          "address": "0x05d85a34b8ae5668a95506ebf3d058763c3ba480",
           "runtimeCodeHash": "0xcdec904224f73aa5ab26e305dd5c69892a5a50379011e4067cd9660914c41f61"
         },
         "reserveVault": {
-          "address": "0x9170640Abc28C2E273e4bf22d6C0BBDF658B2ABd",
+          "address": "0x9170640abc28c2e273e4bf22d6c0bbdf658b2abd",
           "runtimeCodeHash": "0x71d43d9ab272c3c6acd29a19c6d79a753e8d0a7aac6e5c0b7e64202e86159874"
         },
         "hook": {
-          "address": "0x65A5Ca88B08960Daf4818435280F69c48edE80CC",
+          "address": "0x65a5ca88b08960daf4818435280f69c48ede80cc",
           "runtimeCodeHash": "0x9bd9ecb579b12c2d9b7bec8aa62b470aee191d235831088769fdba33b3026de2"
         },
         "liquidityLocker": {
-          "address": "0x294e9C457336b79d0e830eE6e80290Ad2A3bd379",
+          "address": "0x294e9c457336b79d0e830ee6e80290ad2a3bd379",
           "runtimeCodeHash": "0x30e29fa89b1504c8a8d124741dcaa5561407ef855623d126a6323603098dc5da"
         },
         "feeLedger": {
-          "address": "0x42Ff109BCd01119a8Db1FA94149A40e92D630a7C",
+          "address": "0x42ff109bcd01119a8db1fa94149a40e92d630a7c",
           "runtimeCodeHash": "0xf009a5f3e818808fa3ac1a56e2874799a83439fa0f6cd01974ec587693cf40da"
         },
         "releaseController": {
-          "address": "0x69512fA2608570e66c9aced3617405C3d03f1246",
+          "address": "0x69512fa2608570e66c9aced3617405c3d03f1246",
           "runtimeCodeHash": "0x1b416b285671756154547818ae29313f4f23fc751b90aa9b3f761467b4092c65"
         }
       }
@@ -78,6 +78,302 @@
         "releaseController": {
           "address": "0x542b343e209c1a8707e6cc0336773651b4db0217",
           "runtimeCodeHash": "0x613c11b46c79361fea029a573ca5256735b85628ba0647b9d3bf0db9aa75e434"
+        }
+      }
+    },
+    {
+      "symbol": "cNVDA",
+      "sourceCommit": "7432268e0661b41a4044e109938e8b9a2a0b9022",
+      "launchBlock": 56731164,
+      "poolId": "0x79f9c5e79d755cd61a1323fd9a354c4f4e96d0500d40ae7210c9913b5a256c72",
+      "launchTransactionHash": "0x98376bdc2fd424a628fea607c77759f38f1f85cad47840b240bd1002226c146c",
+      "contracts": {
+        "cAsset": {
+          "address": "0x842c2264f683e490432c15155de8ac6398da3c71",
+          "runtimeCodeHash": "0x953a993b278ab42973626938815d89299154efde4ff8dc1b43cb8a8c0f20a1aa"
+        },
+        "releaseVault": {
+          "address": "0x8103c01242278f3131903d9b3f9a68d855c56932",
+          "runtimeCodeHash": "0x0f40a2a5aa77e5f65026b28823a28fad89c335168005428555ef51d95e078b5a"
+        },
+        "reserveVault": {
+          "address": "0x3c47b47e61e6658e2ed6313e6dfbc34adef0fff4",
+          "runtimeCodeHash": "0x29cb7700fe02e67ce5c990043870213f765e992dc107a4f0772b975b0b413d78"
+        },
+        "hook": {
+          "address": "0x19a1e7a63e54f27feaea859422bb99326c35c0cc",
+          "runtimeCodeHash": "0x5a0ce0826b2f4423a26d39058414a1cf16f8f9244a9a187d01786deb073f8d19"
+        },
+        "liquidityLocker": {
+          "address": "0x6a48ced21294da8f08d95c9f6314e8b30309d62e",
+          "runtimeCodeHash": "0xc9536161fc11aa3ed021a274348ef117edcfc6becf0a797f1917295f01c3ea66"
+        },
+        "feeLedger": {
+          "address": "0x5992ee32bf2ed297da5b41cd5a6c9128b2be1761",
+          "runtimeCodeHash": "0xd296f006ee8397ce2484ad873b334df4a6010593a22f7627a61b948bdb51e242"
+        },
+        "releaseController": {
+          "address": "0x017ec64664a9ba4cc2f793efcc1d7c9434204aee",
+          "runtimeCodeHash": "0x3cb0733415d4023b2fd21f3eb8d9e8209bf7ebc82d356ba7ae60a829316dbdb4"
+        }
+      }
+    },
+    {
+      "symbol": "cEWY",
+      "sourceCommit": "7432268e0661b41a4044e109938e8b9a2a0b9022",
+      "launchBlock": 56740009,
+      "poolId": "0x67cb138e47c8cf1e01941632c10129ae8c4cf1644d739577c1bb8367f558d231",
+      "launchTransactionHash": "0xb84ec02f1a6a64ac5ff665d2aabfaa4743a0d09e8f73e2bcf395fe34a865b542",
+      "contracts": {
+        "cAsset": {
+          "address": "0x166bf4c32d522aea235b49cd6c06433ad6d4c739",
+          "runtimeCodeHash": "0x953a993b278ab42973626938815d89299154efde4ff8dc1b43cb8a8c0f20a1aa"
+        },
+        "releaseVault": {
+          "address": "0x705ead0a23945b2ac5abcd6529c1087b99339f4f",
+          "runtimeCodeHash": "0x3b1c421640cc35abfca203e88611c971acf72a79dacb38c52b8a0c0c5b74a0d9"
+        },
+        "reserveVault": {
+          "address": "0x3c18e823f7f8a612727c534493c763374c116fdd",
+          "runtimeCodeHash": "0x810d1440d02922d1d43e87cf9c04a25d73610f40ca0ddaabda8e74e8c2e61e02"
+        },
+        "hook": {
+          "address": "0xcf20ad024bc02536c5b75a10753de795528540cc",
+          "runtimeCodeHash": "0xc9af2709f5c6ffcb81f62c55e7cb94b23e9e5b6e467b72a63723f4f760a5ae6e"
+        },
+        "liquidityLocker": {
+          "address": "0x90bf5b372ad4ed41f2b25598d178c89b9b739c51",
+          "runtimeCodeHash": "0x4a6d95e6e919462f2c6317429c67b7e42778f62172102856395642cf24851962"
+        },
+        "feeLedger": {
+          "address": "0x4e0d6b25d50b5e23f0539a2911349796d5388764",
+          "runtimeCodeHash": "0x33d1a134dab7258e7a00374eb07872fb62cc4db25823420a25cdc4fba2261131"
+        },
+        "releaseController": {
+          "address": "0xa1e048faf4d013768e334bda3440b1f1e87b370a",
+          "runtimeCodeHash": "0xd4756be91782e8f91195d50a2df48f5ed60761dcaaa4ea8df1fbbe35903f53b3"
+        }
+      }
+    },
+    {
+      "symbol": "cSGOV",
+      "sourceCommit": "7432268e0661b41a4044e109938e8b9a2a0b9022",
+      "launchBlock": 56746856,
+      "poolId": "0xb1497b6cf566d8812face7510c6dfe0206ab515e73d4261cb4957065f2d1b92f",
+      "launchTransactionHash": "0x64c575a8aa4ccb884acd479bc3dd6a9300decf61857e378c120bac62cba29ef9",
+      "contracts": {
+        "cAsset": {
+          "address": "0x99cbade570867b40c2964bead28d2df366d9f1a9",
+          "runtimeCodeHash": "0x953a993b278ab42973626938815d89299154efde4ff8dc1b43cb8a8c0f20a1aa"
+        },
+        "releaseVault": {
+          "address": "0x35f773f46e3883a735161cbfdf130dfdebc3a447",
+          "runtimeCodeHash": "0xead2ecd3066c5d4c1906fa5c196127f8af4d86a0fab86426fe6fde5f74dc1bea"
+        },
+        "reserveVault": {
+          "address": "0x71375d34c4543d12ea40cf5e66ee1fa319dd6403",
+          "runtimeCodeHash": "0x5b01940bb556086e4f04dcc6bcff2fe5b9ae46f89d7c2a303e0d854d2d8b5607"
+        },
+        "hook": {
+          "address": "0xc1eb0b1557f241a069c38136ce69bfa4502700cc",
+          "runtimeCodeHash": "0x2091d925541a39804eb5f6054961f1d1beea934737b58cbb62f1d3ad31065e80"
+        },
+        "liquidityLocker": {
+          "address": "0x2e9addc98b4c8d0e5fbbcb80f982a0b3c4983c3d",
+          "runtimeCodeHash": "0x3aaf2e5c4d4e006c592d3007c4f5aae830fefe04430d81176b5aa7213ab6c001"
+        },
+        "feeLedger": {
+          "address": "0x51edfe834ac3cf3db9951b1d554d6717dd550264",
+          "runtimeCodeHash": "0x37aaab0cae68a46423efab1a3bec016ffb9592e5b7f23948ef2e19b743ef0491"
+        },
+        "releaseController": {
+          "address": "0xcfd8da1d20db9051dffec7611fde93c4e2c01b63",
+          "runtimeCodeHash": "0xc021e3665b265f77ecb37772461199f7599cc06dcfbb3af90077a2fcbff15ee5"
+        }
+      }
+    },
+    {
+      "symbol": "cSLV",
+      "sourceCommit": "7432268e0661b41a4044e109938e8b9a2a0b9022",
+      "launchBlock": 56753175,
+      "poolId": "0x47d891c376246470bd860a7991f5867041ad846bc27924accadb842e291f39e8",
+      "launchTransactionHash": "0x47df9a01a5f3a290e19f12f0f943c07a9cbafa439e9a3c85c50054cc592fb088",
+      "contracts": {
+        "cAsset": {
+          "address": "0x2ff495777174a0db364e8c5590d8f99fbe685383",
+          "runtimeCodeHash": "0x953a993b278ab42973626938815d89299154efde4ff8dc1b43cb8a8c0f20a1aa"
+        },
+        "releaseVault": {
+          "address": "0x2685bb1cee4ade8ee1fddacaa0a640d6add407e5",
+          "runtimeCodeHash": "0xc6aa98aa9a27d30f37948dccec90ab46bccf898613ceb4e0e3befda289d74a92"
+        },
+        "reserveVault": {
+          "address": "0x5c53bd85dcec8c15ba0d89d0e921ec27c01f42f0",
+          "runtimeCodeHash": "0xfc6ca34a313ab9716cabaf9819d7230a5b1dcb30564742a93e68da06273da724"
+        },
+        "hook": {
+          "address": "0x390450501a6d939f52642e7a216c017f204e00cc",
+          "runtimeCodeHash": "0xc2c107411109a96f3315a2c5c384af9a5d6a3afb827209e238ebd81b0293a34d"
+        },
+        "liquidityLocker": {
+          "address": "0xc96b566aa58735e48a7b41ce9f7bbc3a6850168c",
+          "runtimeCodeHash": "0x97d2777da311c691a56b1eefefdcad20569dea9eab7158ca885ff1c1e621d2fa"
+        },
+        "feeLedger": {
+          "address": "0x387b65f2c2639205d2d1aab07863f54653e7f790",
+          "runtimeCodeHash": "0xe1862b99e73f772db87356e71b3f97b44b19470d87cabb559def6fa011628730"
+        },
+        "releaseController": {
+          "address": "0x00269e0acf8c40e3595d3566f83b467e68461490",
+          "runtimeCodeHash": "0x36f497a6be81d91ee7326f5ec82659a1259af9d1765623a46ee07764a4841634"
+        }
+      }
+    },
+    {
+      "symbol": "cETH",
+      "sourceCommit": "7432268e0661b41a4044e109938e8b9a2a0b9022",
+      "launchBlock": 56758296,
+      "poolId": "0x07f92311ccc55faa5cfe5febc34dc1ec3224ba08002d086e866c555bd384365f",
+      "launchTransactionHash": "0xd9415af9190cb7d27758c69a78441caa28d35ab96f2a59bcf57cab4a054e041a",
+      "contracts": {
+        "cAsset": {
+          "address": "0x7bdd230ac2e10f03ca3b1500ae72e3029dd706dc",
+          "runtimeCodeHash": "0x953a993b278ab42973626938815d89299154efde4ff8dc1b43cb8a8c0f20a1aa"
+        },
+        "releaseVault": {
+          "address": "0x97be57587af5ae1e368a4d67931cd52e93de8386",
+          "runtimeCodeHash": "0xf21af2c94a8f95c3ce3a4da94c54ad338ce08a69f4a796ea1dc766a066770afb"
+        },
+        "reserveVault": {
+          "address": "0xd8dbfe31dd356a9e5cff9bc1c8bd4a1357efaa59",
+          "runtimeCodeHash": "0xcb14ecc9fd02ad17276e1c13b2137cc8c1652122a1591e8c45620c61af3d3b11"
+        },
+        "hook": {
+          "address": "0x2dfc9d8e6d425f6a4e54e40f9343ce1db5c780cc",
+          "runtimeCodeHash": "0x7e15f3bf91005b663591b7daaf7b17c684cb72d1c6b4901e312c8927da63d37a"
+        },
+        "liquidityLocker": {
+          "address": "0xba0e59825edb14283f3205d1ff366891b2f7d68c",
+          "runtimeCodeHash": "0x2b0ef746652c037369ecd183a9b192bfa555ab55b9c5542f761fa87b1908a0e0"
+        },
+        "feeLedger": {
+          "address": "0xd14bfc8228315dfb07b3f3e5c559ccfff1b45f3b",
+          "runtimeCodeHash": "0x933689aac4ee08b861345b0132eb34daa327e417245024550a1af49ecbff410c"
+        },
+        "releaseController": {
+          "address": "0x9ca152243a9ac72d4f138418bd761f3c6447509f",
+          "runtimeCodeHash": "0x5928ee5dcf9306b3d1befdd580f7cb617f2de9e432f828ba50a0921eed4098ef"
+        }
+      }
+    },
+    {
+      "symbol": "cPONS",
+      "sourceCommit": "7432268e0661b41a4044e109938e8b9a2a0b9022",
+      "launchBlock": 56770825,
+      "poolId": "0xae1089d9103bea981c6509fc79a6de316f1ee5e98b531179cc8768204efd47e3",
+      "launchTransactionHash": "0x45d11734f02d7c0c7e04414fffd0748f2a494ce2f17fbb9d35bd9a2a560787a5",
+      "contracts": {
+        "cAsset": {
+          "address": "0x1b00622c9a3359261c19d3a6c3a2441073e250fb",
+          "runtimeCodeHash": "0x953a993b278ab42973626938815d89299154efde4ff8dc1b43cb8a8c0f20a1aa"
+        },
+        "releaseVault": {
+          "address": "0xe62dd7bf110c8d5d63fe321adee7c4d1ee997235",
+          "runtimeCodeHash": "0x2cf43d581f591cc9074b3820757b2d4a32e69cb642768ca3ca0687ddc8c39df8"
+        },
+        "reserveVault": {
+          "address": "0x7624045c09bf69e540ad7b22fe2bb61bcfd9e659",
+          "runtimeCodeHash": "0x0735eaa82ce13899b58b51007fff06e93c6e78069f4d739de896ea05eac9f307"
+        },
+        "hook": {
+          "address": "0x732ea1fcef546dfecbb90fd350fe09e3ebac80cc",
+          "runtimeCodeHash": "0x6aa66b0f76e621acae45cf13fddb4f67da2038e3e7b99785c1efc02ac8b21cfc"
+        },
+        "liquidityLocker": {
+          "address": "0x2e7b85a0db78e0f312005413165a3e8e59559c70",
+          "runtimeCodeHash": "0x195ed361288d564c3a250da44a4ceb8459f39225c29778dce1a64570c59e560c"
+        },
+        "feeLedger": {
+          "address": "0x4c8aefc707b7c915ef5aff3da3ae41f61d7ccdc8",
+          "runtimeCodeHash": "0x95d760287cf3986178a7a95c08971bcd880feb146b1b2aabce37d1a33189dc6e"
+        },
+        "releaseController": {
+          "address": "0xc4b9ddc2ef9637577fa22fab81d4446bf100d7e0",
+          "runtimeCodeHash": "0x921c37b214d1bd386f775d2e5e109f7ce30d502bf92a5cd5fd2622872f98c50b"
+        }
+      }
+    },
+    {
+      "symbol": "cSPCX",
+      "sourceCommit": "7432268e0661b41a4044e109938e8b9a2a0b9022",
+      "launchBlock": 56779410,
+      "poolId": "0xd86486a5c84ee881a7a4f8f0972862c70616ecd3fa9308f873f7e4546577e624",
+      "launchTransactionHash": "0x07b052a2dbbf8d28b75b10831019d8462fd6244302e61c6af5afdd3ff795de6c",
+      "contracts": {
+        "cAsset": {
+          "address": "0x76be0151a6a09d3da4adef47ab548b52546ce10d",
+          "runtimeCodeHash": "0x953a993b278ab42973626938815d89299154efde4ff8dc1b43cb8a8c0f20a1aa"
+        },
+        "releaseVault": {
+          "address": "0x152cda992084085dccdf84e89837b21d33ac3887",
+          "runtimeCodeHash": "0x9289b247ed06e1a4efdd12e04273d0ecc279fe1ed4a1e813145f0e59653884e5"
+        },
+        "reserveVault": {
+          "address": "0x023eabeb0ed4c2aabef7e67491f4359b4eab6515",
+          "runtimeCodeHash": "0x42b1ffe774658926b5568d13189a3a6c50a2ca10b72c92150879cbff2e97ff6b"
+        },
+        "hook": {
+          "address": "0x1fe80095a6c4e0bb562669577eb5e29e843980cc",
+          "runtimeCodeHash": "0x5497f8589fd225e3ff0c1e0af7f8d10b862d11f54e7a77d4888e366ffb4e4f96"
+        },
+        "liquidityLocker": {
+          "address": "0x727b8c8527c0e0b0792b6b50631dd7927575af41",
+          "runtimeCodeHash": "0x6448e7d06bd6ec70211387db3636f41962b16c0fd7d53094d2deef4c272e0192"
+        },
+        "feeLedger": {
+          "address": "0x54c5f0fd643b426d5115e64efe384524e8a158da",
+          "runtimeCodeHash": "0x074859ca6471e3f0743c25570921a859c07e844b2f8672af8dc4f74e09d30549"
+        },
+        "releaseController": {
+          "address": "0xb89539ce57d40528e8c2f734e8fb32c583633604",
+          "runtimeCodeHash": "0x8a0b6005f177f8892efe6d31a64f8b833444df38126cee5eaa77a6cda39313f6"
+        }
+      }
+    },
+    {
+      "symbol": "cTSLA",
+      "sourceCommit": "7432268e0661b41a4044e109938e8b9a2a0b9022",
+      "launchBlock": 56785837,
+      "poolId": "0xd10db0b1320060efbb48156c530ff8f2f08a3025caffe5e7dcdec4a1af59ab42",
+      "launchTransactionHash": "0xce52ae61a5e3eb6b02ccc760e55f983cc2873cb76cbb4752d62f2d20f76f2cee",
+      "contracts": {
+        "cAsset": {
+          "address": "0x96bee785764c73d300863032eaf99d6c31fd6d9b",
+          "runtimeCodeHash": "0x953a993b278ab42973626938815d89299154efde4ff8dc1b43cb8a8c0f20a1aa"
+        },
+        "releaseVault": {
+          "address": "0x9b24e0ec61be8012c9e9015b254c5dac0535b3ac",
+          "runtimeCodeHash": "0x5d0b47e17d2476e2032ac1add7f399106d2434c52c3d76ab95fdeecb44909636"
+        },
+        "reserveVault": {
+          "address": "0xe5edcabe387c3e56bc014ba3802ab6cc6e7a891a",
+          "runtimeCodeHash": "0x53364609d88605c1b8aec0d5546f50593ccc0c258586aa2b3beb66f38eee0be0"
+        },
+        "hook": {
+          "address": "0x33c47df31f2ef88c95b87d5cd8e9e6ed828100cc",
+          "runtimeCodeHash": "0xfa3312fa66adc60c5156b9da098c770f6e357fd52c5ccc1cf4b99fc8c8f12d95"
+        },
+        "liquidityLocker": {
+          "address": "0xe6e2e66b83a591a4d869c38fe273ecde3e7ea8ce",
+          "runtimeCodeHash": "0xdb4c4e701ea600ad74dde40e6a830ea49b85693e3098857aea8fe5495f33309d"
+        },
+        "feeLedger": {
+          "address": "0x732b4b6aa8cb1f1e72618f2a88fa5aed17fbd4d4",
+          "runtimeCodeHash": "0xcb981977066ff91b06cb6a6c907a2a911d3c0205eb9df2d106b37d8078d03b94"
+        },
+        "releaseController": {
+          "address": "0x0883d647fec043038e3ab6c9da35946312a4ae43",
+          "runtimeCodeHash": "0x2bbab38456bc6ef23797348e0bda6ef851a34b81684844fb53218b1621904a0e"
         }
       }
     }
