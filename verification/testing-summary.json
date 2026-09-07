@@ -1,0 +1,40 @@
+{
+  "schema": "catch.maintainer-regression-summary.v1",
+  "date": "2026-09-07",
+  "evidenceScope": "Maintainer-run focused offline regression. Public source closure matched; private test harnesses are not included or reproduced by public CI. Historical framework reviews are documented separately.",
+  "sourceFilesMatched": 36,
+  "sourceManifest": "verification/build-manifest.json",
+  "testWorkspaceHead": "7432268e0661b41a4044e109938e8b9a2a0b9022",
+  "testWorkspaceClean": false,
+  "privateHarnessesIncluded": false,
+  "freshForkRun": false,
+  "compiler": "0.8.26+commit.8a97fa7a",
+  "foundry": "1.7.1",
+  "foundryCommit": "4072e48705af9d93e3c0f6e29e93b5e9a40caed8",
+  "invariantDepth": 500,
+  "invariantFailOnRevert": false,
+  "solidity": {
+    "passed": 40,
+    "failed": 0,
+    "skipped": 0,
+    "invariants": [
+      { "name": "invariantActiveClaimsAndGldCustodyReconcile", "runs": 256, "calls": 128000, "reverts": 0 },
+      { "name": "invariantBackingPerActiveClaimNeverFalls", "runs": 256, "calls": 128000, "reverts": 0 },
+      { "name": "invariantFixedSupplyEqualsAllKnownCustody", "runs": 256, "calls": 128000, "reverts": 0 },
+      { "name": "invariantGenesisPositionRemainsPermanent", "runs": 256, "calls": 128000, "reverts": 0 },
+      { "name": "invariantLedgersConserveAndPeripheryHasNoResidue", "runs": 256, "calls": 128000, "reverts": 0 },
+      { "name": "invariantReleaseAccountingReconciles", "runs": 256, "calls": 128000, "reverts": 0 }
+    ]
+  },
+  "simulators": { "passed": 10, "failed": 0, "skipped": 0 },
+  "testFileSha256": {
+    "test/CatchGoldVNextCore.t.sol": "8c6926ce22a19f7a2b65b6d2a946a7a671985bcdc8b1ee6e8dbf6fad09bba27c",
+    "test/CatchGoldFactoryIntegration.t.sol": "3d2650a9b30129dd27ebeb08b6059687290af8a8b356d42489f584269ab63ba8",
+    "test/CatchFamilyFactoryV1Integration.t.sol": "8610af534516b9bd8fbfecd41f6a0ecff592d49282b398add0372cfa484766b2",
+    "test/CatchFamilyHookV1.t.sol": "b147a8585c5f6efa5d53a97e50094b97e56f711f420fde71d7bbb7d31f1d2046",
+    "test/CatchGoldStatefulInvariants.t.sol": "ca4bf2ba4e9f45b421bceba48fa284011a5f863702386f1c458d72304a6102dc",
+    "simulator/test/cgold-robinhood-vnext-ledger.test.mjs": "3c72a334d1fc7fccf42f976bf7f461a373f075a8ba5329cb02a72aa3f5b7c4c5",
+    "simulator/test/cgold-v4-launch.test.mjs": "0d1f64f8fff6cab58f195819d2baef486da60bd668811ac21653c1e08fef95dc",
+    "simulator/test/cgold-backing-per-claim.test.mjs": "92deb895b694a1ed816a3ee6b569030a9165e26ab25f0be6e6474cf9c77ee8ba"
+  }
+}

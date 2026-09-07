@@ -1,9 +1,28 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { safePath, exactKeys, validateDeployments, checkArtifact, hash } from "../scripts/publication-lib.mjs";
+import { safePath, exactKeys, validateDeployments, checkArtifact, hash, checkBrandAsset } from "../scripts/publication-lib.mjs";
 
 const deployment = JSON.parse(await readFile(new URL("../deployments/robinhood.json", import.meta.url)));
+test("only the exact approved public PNG is permitted", async () => {
+  const bytes = await readFile(new URL("../assets/catch-market-standard.png", import.meta.url));
+  checkBrandAsset(bytes);
+  const changed = Buffer.from(bytes); changed[changed.length - 1] ^= 1;
+  assert.throws(() => checkBrandAsset(changed));
+  assert.throws(() => checkBrandAsset(Buffer.from("not a PNG")));
+});
+test("testing evidence separates invariant and simulator results", async () => {
+  const result = JSON.parse(await readFile(new URL("../verification/testing-summary.json", import.meta.url)));
+  assert.equal(result.sourceFilesMatched, 36);
+  assert.equal(result.solidity.passed, 40);
+  assert.equal(result.solidity.invariants.length, 6);
+  assert.equal(result.simulators.passed, 10);
+  assert.equal(result.freshForkRun, false);
+  assert.equal(result.privateHarnessesIncluded, false);
+  for (const item of result.solidity.invariants) {
+    assert.equal(item.runs, 256); assert.equal(item.calls, 128000); assert.equal(item.reverts, 0);
+  }
+});
 test("only bounded relative paths", () => {
   assert.equal(safePath("src/CatchAsset.sol"), "src/CatchAsset.sol");
   for (const path of ["", "/tmp/file", "../private", "src/../key", "src//file", "C:\\key", "./file"]) assert.throws(() => safePath(path));

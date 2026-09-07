@@ -4,6 +4,12 @@ import { createHash } from "node:crypto";
 export const roles = ["cAsset", "releaseVault", "reserveVault", "hook", "liquidityLocker", "feeLedger", "releaseController"];
 export const hash = value => createHash("sha256").update(value).digest("hex");
 
+export function checkBrandAsset(bytes) {
+  assert(bytes.length < 2_000_000, "Brand asset exceeds publication limit");
+  assert.equal(bytes.subarray(0, 8).toString("hex"), "89504e470d0a1a0a", "Expected PNG");
+  assert.equal(hash(bytes), "50a2e059b5c2ea16f65ad2b7e4ab36f63b0b48f19ae4a89b1de294135a05064e", "Unapproved brand asset");
+}
+
 export function safePath(value) {
   assert(typeof value === "string" && value.length > 0, "Empty path");
   assert(!value.startsWith("/") && !value.includes("\\") && !value.includes(":"), "Non-relative path");
