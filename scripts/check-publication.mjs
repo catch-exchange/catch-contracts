@@ -4,7 +4,7 @@ import { readFile, lstat } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 import { dirname, resolve, relative } from "node:path";
 import { fileURLToPath } from "node:url";
-import { hash, roles, safePath, validateDeployments } from "./publication-lib.mjs";
+import { hash, roles, safePath, validateDeployments, checkBrandAsset } from "./publication-lib.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const read = path => readFile(resolve(root, safePath(path)));
@@ -18,6 +18,7 @@ const allowed = new Set([
   "README.md", "LICENSE", "NOTICE.md", "SECURITY.md", "CONTRIBUTING.md", "PUBLISH_CHECKLIST.md",
   "licenses/Uniswap-MIT.txt", "deployments/robinhood.json", "verification/build-manifest.json", "verification/toolchain.json",
   "docs/ARCHITECTURE.md", "docs/DEPLOYMENTS.md", "docs/VERIFICATION.md", "docs/RELEASING.md",
+  "docs/REVIEW_AND_TESTING.md", "verification/testing-summary.json", "assets/README.md", "assets/catch-market-standard.png",
   "scripts/reproduce.mjs", "scripts/download-tool.mjs", "scripts/check-publication.mjs", "scripts/publication-lib.mjs",
   "tests/publication.test.mjs", ".github/CODEOWNERS", ".github/dependabot.yml", ".github/pull_request_template.md",
   ".github/ISSUE_TEMPLATE/config.yml", ".github/ISSUE_TEMPLATE/documentation.yml", ".github/workflows/verify.yml",
@@ -37,6 +38,7 @@ for (const path of files) {
   const stat = await lstat(resolve(root, path));
   assert(stat.isFile() && !stat.isSymbolicLink() && stat.size < 2_000_000, `Unexpected file type/size: ${path}`);
   const content = await read(path);
+  if (path === "assets/catch-market-standard.png") { checkBrandAsset(content); continue; }
   assert(!content.includes(0), `Binary content: ${path}`);
   const text = content.toString("utf8");
   assert(!/(?:\/Users\/|\/home\/)[a-zA-Z0-9_-]+\//.test(text), `Private machine path: ${path}`);

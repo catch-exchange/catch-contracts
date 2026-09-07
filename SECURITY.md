@@ -18,7 +18,10 @@ permission to conduct otherwise unauthorized activity.
 
 This is the exact Family V1 source package, not a security certification. Build
 reproduction does not prove runtime immutable values, current issuer behavior,
-solvency, liquidity depth or routing approval. No independent audit is claimed.
+solvency, liquidity depth or routing approval. No commissioned independent
+audit is claimed. The [AI-assisted review history and regression evidence](docs/REVIEW_AND_TESTING.md)
+records framework use across Codex and Claude sessions, candidate boundaries,
+remediation, intentional design dispositions and testing limitations.
 
 Deployed contracts are immutable. Editing a file cannot upgrade them. A defect
 may require incident communication and a separately reviewed deployment; it

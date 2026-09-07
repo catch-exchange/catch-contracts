@@ -7,11 +7,31 @@ Catch is the protocol; each cAsset market has its own underlying reserve,
 release inventory and accounting. cGOLD and cSPY are the first published
 families on Robinhood Chain.
 
+![Catch marble mark above a circular plinth](assets/catch-market-standard.png)
+
 [![Verify public source](https://github.com/catch-exchange/catch-contracts/actions/workflows/verify.yml/badge.svg)](https://github.com/catch-exchange/catch-contracts/actions/workflows/verify.yml)
 
 [Architecture](docs/ARCHITECTURE.md) · [Deployments](docs/DEPLOYMENTS.md) ·
 [Reproduce the build](docs/VERIFICATION.md) · [Technical paper](https://catch.exchange/paper) ·
 [Security](SECURITY.md)
+
+## Review and testing
+
+Catch has undergone repeated **AI-assisted security reviews across separate
+Codex and Claude sessions**, using the Pashov Solidity auditor and EthSkills
+EVM audit workflows, followed by focused remediation and delta reviews.
+This describes use of the open-source frameworks, **not an audit commissioned
+from Pashov Audit Group or an endorsement by either framework's authors**.
+
+The latest bounded regression run passed **40 Solidity tests**, including six
+stateful invariants at **256 runs / 128,000 calls each**, and **10 economic
+simulator tests**. Edge cases include multi-step releases, rounding, partial
+swap fills, unsolicited dust, custody isolation and unreleased-inventory access.
+
+Read the [review history, findings disposition and testing scope](docs/REVIEW_AND_TESTING.md).
+Historical reviews cover specific earlier candidates; they are not blanket
+certification of every later deployment. The public CI checks source integrity
+and compilation, not the private contract-test suite.
 
 ## Start here
 
@@ -20,6 +40,7 @@ families on Robinhood Chain.
 | Understand the graph and asset flows | [Architecture and custody boundaries](docs/ARCHITECTURE.md) |
 | Check a live family or hook address | [Deployment directory](docs/DEPLOYMENTS.md) and [public identities](deployments/robinhood.json) |
 | Reproduce compiler outputs | [Verification guide](docs/VERIFICATION.md) |
+| Inspect review methodology and regression evidence | [Review and testing](docs/REVIEW_AND_TESTING.md) |
 | Understand release pricing and reserve claims | [Technical paper](https://catch.exchange/paper) |
 | Contribute or report a problem | [Contributing](CONTRIBUTING.md) or [private security reporting](SECURITY.md) |
 
@@ -90,7 +111,7 @@ with constructor immutables filled in.
 
 ## Evidence, not guarantees
 
-No independent audit, perpetual exit liquidity, current explorer badge or router
+No commissioned independent audit, perpetual exit liquidity, current explorer badge or router
 allowlisting is implied. Genesis liquidity is one-sided; market price and backing
 differ. Issuers may retain controls. No future CATCH-token entitlement is defined.
 
