@@ -45,6 +45,11 @@ check independently recomputes it. No directory, history or generic key pattern
 is excluded. GitHub push protection is an additional
 pre-publication control; CI runs **after** data has reached GitHub.
 
+The scanner downloader currently supports Linux x64 and macOS Apple Silicon.
+Unlike the compiler downloader, it does not yet pin a macOS x64 scanner archive;
+on that platform, install Gitleaks 8.30.1 from its official release and verify
+the release checksum before running the same scans.
+
 ## What each check means
 
 | Check | Establishes | Does not establish |
@@ -62,8 +67,31 @@ constructor values filled in. These domains must not be treated as equivalent.
 
 For a fresh chain match, resolve constructor-bound values/immutable offsets,
 read the exact address at a pinned block, then compare instantiated runtime.
-A token badge does not verify every component or depot. No new Sourcify full
-match or independent audit is claimed by this source package.
+A token badge does not verify every component or depot.
+
+## Published source status
+
+The [per-address evidence record](../verification/source-status.json) captures
+the 7 September 2026 source-publication check. It includes exact provider URLs,
+check times, creation transactions and compiler-input hashes for the ordinary
+contracts, separately from the [launch identity directory](../deployments/robinhood.json).
+
+| Scope | Recorded result | Boundary |
+| --- | --- | --- |
+| Shared factory + seven components for each of ten families (71 addresses) | Sourcify exact creation and runtime matches | Blockscout badges were not individually rechecked for all 71; synchronization is not assumed |
+| Seven shared code depots | Blockscout partial source matches; observed payloads matched the frozen component creation code byte-for-byte and the pinned runtime code hashes | Sourcify returned `bytecode_length_mismatch`; these are **not** Sourcify exact matches |
+
+Each depot constructor returns stored component creation code as its runtime.
+The nominal `CatchCodeDepot` Solidity runtime is therefore not the runtime placed
+onchain. The separate payload evidence records the component, byte lengths and
+matching Keccak hashes. This distinction must not be collapsed into “78 full
+matches.” The source-only package records the check; its offline CI does not
+repeat live provider calls or independently re-fetch the depot payloads.
+
+Verification establishes source correspondence, not a new security audit,
+economic guarantee, issuer guarantee or Uniswap/0x routing approval. The source
+closure, ABIs and compiler inputs are unchanged from `source-v1.0.1`; version
+`source-v1.0.2` adds launched identities, evidence and publication-tooling checks.
 
 ## CI boundary
 

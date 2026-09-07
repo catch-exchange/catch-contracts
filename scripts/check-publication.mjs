@@ -4,7 +4,7 @@ import { readFile, lstat } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 import { dirname, resolve, relative } from "node:path";
 import { fileURLToPath } from "node:url";
-import { hash, roles, safePath, validateDeployments, checkBrandAsset } from "./publication-lib.mjs";
+import { hash, roles, safePath, validateDeployments, validateSourceStatus, checkBrandAsset } from "./publication-lib.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const read = path => readFile(resolve(root, safePath(path)));
@@ -18,7 +18,7 @@ const allowed = new Set([
   "README.md", "LICENSE", "NOTICE.md", "SECURITY.md", "CONTRIBUTING.md", "PUBLISH_CHECKLIST.md",
   "licenses/Uniswap-MIT.txt", "deployments/robinhood.json", "verification/build-manifest.json", "verification/toolchain.json",
   "docs/ARCHITECTURE.md", "docs/DEPLOYMENTS.md", "docs/VERIFICATION.md", "docs/RELEASING.md",
-  "docs/REVIEW_AND_TESTING.md", "verification/testing-summary.json", "assets/README.md", "assets/catch-market-standard.png",
+  "docs/REVIEW_AND_TESTING.md", "verification/testing-summary.json", "verification/source-status.json", "assets/README.md", "assets/catch-market-standard.png",
   "scripts/reproduce.mjs", "scripts/download-tool.mjs", "scripts/check-publication.mjs", "scripts/publication-lib.mjs",
   "tests/publication.test.mjs", ".github/CODEOWNERS", ".github/dependabot.yml", ".github/pull_request_template.md",
   ".github/ISSUE_TEMPLATE/config.yml", ".github/ISSUE_TEMPLATE/documentation.yml", ".github/workflows/verify.yml",
@@ -66,7 +66,9 @@ for (const target of manifest.targets) {
   }
   assert(Array.isArray(JSON.parse(await read(`abi/${target.role}.json`))), "Invalid ABI export");
 }
-validateDeployments(JSON.parse(await read("deployments/robinhood.json")));
+const deployments = JSON.parse(await read("deployments/robinhood.json"));
+validateDeployments(deployments);
+validateSourceStatus(JSON.parse(await read("verification/source-status.json")), deployments, manifest);
 const workflow = (await read(".github/workflows/verify.yml")).toString();
 assert(!/secrets\s*\.|pull_request_target|:\s*write\b/.test(workflow), "CI exceeds read-only publication scope");
 assert.match(workflow, /permissions:\s*\n\s+contents: read/);

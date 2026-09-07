@@ -4,8 +4,8 @@
 
 Exact deployed Solidity sources and reproducible inputs for **Catch Family V1**.
 Catch is the protocol; each cAsset market has its own underlying reserve,
-release inventory and accounting. cGOLD and cSPY are the first published
-families on Robinhood Chain.
+release inventory and accounting. Ten live families are published on Robinhood
+Chain, from cGOLD and cSPY to equities, silver, ETH and PONS.
 
 ![Catch marble mark above a circular plinth](assets/catch-market-standard.png)
 
@@ -48,13 +48,28 @@ and compilation, not the private contract-test suite.
 
 | Contract | Address |
 | --- | --- |
-| Shared Family V1 factory | `0x21acBCC6227Cf5D2Fb5eB876735edd04F7B49c12` |
+| Shared Family V1 factory | `0x21acbcc6227cf5d2fb5eb876735edd04f7b49c12` |
 | cGOLD | `0xb44e29a0540c48054d9caec192cdbb18c68398ec` |
 | cSPY | `0xad2a032b99ede1ce2f03d2f1ba5a1b790f98592e` |
+| cNVDA | `0x842c2264f683e490432c15155de8ac6398da3c71` |
+| cEWY | `0x166bf4c32d522aea235b49cd6c06433ad6d4c739` |
+| cSGOV | `0x99cbade570867b40c2964bead28d2df366d9f1a9` |
+| cSLV | `0x2ff495777174a0db364e8c5590d8f99fbe685383` |
+| cETH | `0x7bdd230ac2e10f03ca3b1500ae72e3029dd706dc` |
+| cPONS | `0x1b00622c9a3359261c19d3a6c3a2441073e250fb` |
+| cSPCX | `0x76be0151a6a09d3da4adef47ab548b52546ce10d` |
+| cTSLA | `0x96bee785764c73d300863032eaf99d6c31fd6d9b` |
 
 Match chain **and** address, not a ticker. The JSON lists all seven components
 per family and recorded runtime hashes. Current explorer verification and
 third-party routing approval are separate checks, not claims made by this table.
+
+**Source verification, checked 7 September 2026:** the factory and all 70 family
+contracts have exact creation **and** runtime matches on Sourcify. The seven
+shared code depots are a different case: Blockscout partial source matches plus
+separate exact payload checks, not Sourcify full matches. See the
+[verification result and limits](docs/VERIFICATION.md#published-source-status)
+and [per-address evidence](verification/source-status.json).
 
 ## Repository map
 
@@ -111,8 +126,8 @@ with constructor immutables filled in.
 
 ## Evidence, not guarantees
 
-No commissioned independent audit, perpetual exit liquidity, current explorer badge or router
-allowlisting is implied. Genesis liquidity is one-sided; market price and backing
+No commissioned independent audit, perpetual exit liquidity, continuously synced
+explorer badges or router allowlisting is implied. Genesis liquidity is one-sided; market price and backing
 differ. Issuers may retain controls. No future CATCH-token entitlement is defined.
 
 Source visibility allows inspection **and copying**, not anti-cloning protection.

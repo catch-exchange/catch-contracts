@@ -1,9 +1,43 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { safePath, exactKeys, validateDeployments, checkArtifact, hash, checkBrandAsset } from "../scripts/publication-lib.mjs";
+import { safePath, exactKeys, validateDeployments, validateSourceStatus, checkArtifact, hash, checkBrandAsset } from "../scripts/publication-lib.mjs";
 
 const deployment = JSON.parse(await readFile(new URL("../deployments/robinhood.json", import.meta.url)));
+const sourceStatus = JSON.parse(await readFile(new URL("../verification/source-status.json", import.meta.url)));
+const build = JSON.parse(await readFile(new URL("../verification/build-manifest.json", import.meta.url)));
+test("ten live families have exact per-address source evidence, with depots separate", () => {
+  assert.deepEqual(deployment.families.map(f => f.symbol), ["cGOLD", "cSPY", "cNVDA", "cEWY", "cSGOV", "cSLV", "cETH", "cPONS", "cSPCX", "cTSLA"]);
+  assert.equal(sourceStatus.contracts.length, 71); assert.equal(sourceStatus.depots.length, 7);
+  validateSourceStatus(sourceStatus, deployment, build);
+});
+test("verification cannot imply completeness, exactness or provider admission without evidence", () => {
+  const edits = [
+    v => v.contracts.pop(),
+    v => { v.contracts[1] = v.contracts[0]; },
+    v => { v.contracts[0].family = "cUNLAUNCHED"; },
+    v => { v.contracts[0].standardInputSha256 = "0".repeat(64); },
+    v => { v.contracts[0].sourcify.runtimeMatch = "partial_match"; },
+    v => { v.contracts[0].sourcify.url = "https://example.com"; },
+    v => { v.contracts[0].blockscout.status = "exact_match"; },
+    v => { v.depots[0].sourcify.status = "exact_match"; },
+    v => { v.depots[0].payload.byteForByteMatch = false; },
+    v => { v.depots[0].payload.componentCreationBytes += 1; },
+    v => { v.depots[0].payload.pinnedRuntimeCodeHash = "0x" + "0".repeat(64); },
+    v => { v.depots[1].component = v.depots[0].component; },
+    v => { v.depots[0].address = v.contracts[0].address; },
+    v => { v.contracts[0].routerApproved = true; },
+  ];
+  for (const edit of edits) { const copy = structuredClone(sourceStatus); edit(copy); assert.throws(() => validateSourceStatus(copy, deployment, build)); }
+});
+test("source evidence rejects private and unreviewed nested fields", () => {
+  for (const name of ["salt", "signature", "rpcUrl", "privateKey", "bundlePath"]) {
+    for (const select of [v => v, v => v.contracts[0], v => v.contracts[0].sourcify, v => v.depots[0].payload]) {
+      const copy = structuredClone(sourceStatus); select(copy)[name] = "not a real value";
+      assert.throws(() => validateSourceStatus(copy, deployment, build));
+    }
+  }
+});
 test("only the exact approved public PNG is permitted", async () => {
   const bytes = await readFile(new URL("../assets/catch-market-standard.png", import.meta.url));
   checkBrandAsset(bytes);
