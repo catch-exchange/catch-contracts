@@ -6,10 +6,23 @@ import { safePath, exactKeys, validateDeployments, validateSourceStatus, checkAr
 const deployment = JSON.parse(await readFile(new URL("../deployments/robinhood.json", import.meta.url)));
 const sourceStatus = JSON.parse(await readFile(new URL("../verification/source-status.json", import.meta.url)));
 const build = JSON.parse(await readFile(new URL("../verification/build-manifest.json", import.meta.url)));
-test("ten live families have exact per-address source evidence, with depots separate", () => {
-  assert.deepEqual(deployment.families.map(f => f.symbol), ["cGOLD", "cSPY", "cNVDA", "cEWY", "cSGOV", "cSLV", "cETH", "cPONS", "cSPCX", "cTSLA"]);
-  assert.equal(sourceStatus.contracts.length, 71); assert.equal(sourceStatus.depots.length, 7);
+test("eleven live families have exact per-address source evidence, with depots separate", () => {
+  assert.deepEqual(deployment.families.map(f => f.symbol), ["cGOLD", "cSPY", "cNVDA", "cEWY", "cSGOV", "cSLV", "cETH", "cPONS", "cSPCX", "cTSLA", "cCATCH"]);
+  assert.equal(sourceStatus.contracts.length, 78); assert.equal(sourceStatus.depots.length, 7);
   validateSourceStatus(sourceStatus, deployment, build);
+});
+test("published evidence checksum covers every contract and depot record", () => {
+  assert.equal(sourceStatus.evidenceSha256, hash(JSON.stringify({ contracts: sourceStatus.contracts, depots: sourceStatus.depots })));
+});
+test("cCATCH records the reconciled launch and preserves actual check times", () => {
+  const family = deployment.families.find(f => f.symbol === "cCATCH");
+  assert.equal(family.contracts.cAsset.address, "0x604f247c496049ffe05e603a87fcd7926a3c9fb9");
+  assert.equal(family.launchBlock, 57602365);
+  assert.equal(family.launchTransactionHash, "0xc8d039b0cd5cf1ba9ba3cbdcdcc6b2cb6a81e9692254a0d81ba52013e28261c2");
+  assert.equal(sourceStatus.contracts.filter(c => c.family === "cCATCH").length, 7);
+  for (const c of sourceStatus.contracts) {
+    assert(c.sourcify.checkedAt.startsWith(c.family === "cCATCH" ? "2026-09-08" : "2026-09-07"));
+  }
 });
 test("verification cannot imply completeness, exactness or provider admission without evidence", () => {
   const edits = [

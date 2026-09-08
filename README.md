@@ -4,8 +4,8 @@
 
 Exact deployed Solidity sources and reproducible inputs for **Catch Family V1**.
 Catch is the protocol; each cAsset market has its own underlying reserve,
-release inventory and accounting. Ten live families are published on Robinhood
-Chain, from cGOLD and cSPY to equities, silver, ETH and PONS.
+release inventory and accounting. Eleven live families are published on Robinhood
+Chain, from cGOLD and cSPY to equities, silver, ETH, PONS and cCATCH / CATCH.
 
 ![Catch marble mark above a circular plinth](assets/catch-market-standard.png)
 
@@ -59,17 +59,24 @@ and compilation, not the private contract-test suite.
 | cPONS | `0x1b00622c9a3359261c19d3a6c3a2441073e250fb` |
 | cSPCX | `0x76be0151a6a09d3da4adef47ab548b52546ce10d` |
 | cTSLA | `0x96bee785764c73d300863032eaf99d6c31fd6d9b` |
+| cCATCH | `0x604f247c496049ffe05e603a87fcd7926a3c9fb9` |
 
 Match chain **and** address, not a ticker. The JSON lists all seven components
 per family and recorded runtime hashes. Current explorer verification and
 third-party routing approval are separate checks, not claims made by this table.
 
-**Source verification, checked 7 September 2026:** the factory and all 70 family
-contracts have exact creation **and** runtime matches on Sourcify. The seven
+**Recorded source verification:** the factory and all 77 family contracts have
+exact creation **and** runtime matches on Sourcify. The original ten families
+were checked on 7 September 2026; cCATCH's seven components were checked on
+8 September 2026. The seven
 shared code depots are a different case: Blockscout partial source matches plus
 separate exact payload checks, not Sourcify full matches. See the
 [verification result and limits](docs/VERIFICATION.md#published-source-status)
 and [per-address evidence](verification/source-status.json).
+
+cCATCH is the separate CATCH-backed reserve market, not the CATCH platform token.
+Its [launch identity and market link](docs/DEPLOYMENTS.md) use the same frozen
+Family V1 sources; this publication does not change contracts or token economics.
 
 ## Repository map
 

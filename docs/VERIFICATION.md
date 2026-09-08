@@ -72,26 +72,36 @@ A token badge does not verify every component or depot.
 ## Published source status
 
 The [per-address evidence record](../verification/source-status.json) captures
-the 7 September 2026 source-publication check. It includes exact provider URLs,
+the 7 September 2026 source-publication check and the seven cCATCH components
+checked on 8 September 2026. Earlier per-address timestamps are preserved; they
+have not been relabelled as fresh checks. It includes exact provider URLs,
 check times, creation transactions and compiler-input hashes for the ordinary
 contracts, separately from the [launch identity directory](../deployments/robinhood.json).
 
 | Scope | Recorded result | Boundary |
 | --- | --- | --- |
-| Shared factory + seven components for each of ten families (71 addresses) | Sourcify exact creation and runtime matches | Blockscout badges were not individually rechecked for all 71; synchronization is not assumed |
+| Shared factory + seven components for each of eleven families (78 addresses) | Sourcify exact creation and runtime matches | Blockscout badges were not individually rechecked for all 78; synchronization is not assumed |
 | Seven shared code depots | Blockscout partial source matches; observed payloads matched the frozen component creation code byte-for-byte and the pinned runtime code hashes | Sourcify returned `bytecode_length_mismatch`; these are **not** Sourcify exact matches |
 
 Each depot constructor returns stored component creation code as its runtime.
 The nominal `CatchCodeDepot` Solidity runtime is therefore not the runtime placed
 onchain. The separate payload evidence records the component, byte lengths and
-matching Keccak hashes. This distinction must not be collapsed into “78 full
+matching Keccak hashes. This distinction must not be collapsed into “85 full
 matches.” The source-only package records the check; its offline CI does not
 repeat live provider calls or independently re-fetch the depot payloads.
 
 Verification establishes source correspondence, not a new security audit,
 economic guarantee, issuer guarantee or Uniswap/0x routing approval. The source
 closure, ABIs and compiler inputs are unchanged from `source-v1.0.1`; version
-`source-v1.0.2` adds launched identities, evidence and publication-tooling checks.
+`source-v1.0.2` added ten-family identities, evidence and publication-tooling checks.
+`source-v1.0.3` adds the already-launched cCATCH graph and its seven source matches;
+it changes no Solidity, ABI, compiler input or onchain contract. Each cCATCH input
+was checked byte-for-byte against the existing published input hash.
+
+From `source-v1.0.3`, `evidenceSha256` is SHA-256 of the UTF-8 compact JSON
+`JSON.stringify({ contracts: record.contracts, depots: record.depots })`, retaining
+the field and array order of the published record. It covers the recorded facts,
+not private evidence files. The publication tests recompute this checksum.
 
 ## CI boundary
 
