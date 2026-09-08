@@ -1,10 +1,16 @@
-# Catch contracts
+# Catch · $CATCH
 
-**One family. One reserve. A fixed supply.**
+**A protocol layer for existing and new onchain markets.**
 
-Exact deployed Solidity sources and reproducible inputs for **Catch Family V1**.
-Catch is the protocol; each cAsset market has its own underlying reserve,
-release inventory and accounting. Eleven live families are published on Robinhood
+$CATCH is **Catch's protocol-layer token**. Catch adds reserve-backed cAsset
+markets around onchain assets: one family, one isolated reserve, a fixed supply.
+
+[$CATCH overview](https://catch.exchange/protocol?view=catch) ·
+[$CATCH contract · Robinhood Chain](https://robinhoodchain.blockscout.com/address/0xe9e5cfdca8fbee1f68a7c92d7316331d1aab5fb9?tab=contract)
+
+This repository publishes exact deployed Solidity sources and reproducible inputs
+for **Catch Family V1**, not the external $CATCH token contract. Each cAsset has
+its own release inventory and accounting. Eleven live families are published on Robinhood
 Chain, from cGOLD and cSPY to equities, silver, ETH, PONS and cCATCH / CATCH.
 
 ![Catch marble mark above a circular plinth](assets/catch-market-standard.png)
