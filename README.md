@@ -8,6 +8,12 @@ markets around onchain assets: one family, one isolated reserve, a fixed supply.
 [$CATCH overview](https://catch.exchange/protocol?view=catch) ·
 [$CATCH contract · Robinhood Chain](https://robinhoodchain.blockscout.com/address/0xe9e5cfdca8fbee1f68a7c92d7316331d1aab5fb9?tab=contract)
 
+**$CATCH contract address · Robinhood Chain (4663)**
+
+```text
+0xe9e5cfdca8fbee1f68a7c92d7316331d1aab5fb9
+```
+
 This repository publishes exact deployed Solidity sources and reproducible inputs
 for **Catch Family V1**, not the external $CATCH token contract. Each cAsset has
 its own release inventory and accounting. Eleven live families are published on Robinhood
