@@ -5,7 +5,7 @@
 $CATCH is **Catch's protocol-layer token**. Catch adds reserve-backed cAsset
 markets around onchain assets: one family, one isolated reserve, a fixed supply.
 
-[$CATCH overview](https://catch.exchange/protocol?view=catch) ·
+[$CATCH overview](https://catch.exchange/protocol?view=catch&src=github) ·
 [$CATCH contract · Robinhood Chain](https://robinhoodchain.blockscout.com/address/0xe9e5cfdca8fbee1f68a7c92d7316331d1aab5fb9?tab=contract)
 
 **$CATCH contract address · Robinhood Chain (4663)**
@@ -24,7 +24,7 @@ Chain, from cGOLD and cSPY to equities, silver, ETH, PONS and cCATCH / CATCH.
 [![Verify public source](https://github.com/catch-exchange/catch-contracts/actions/workflows/verify.yml/badge.svg)](https://github.com/catch-exchange/catch-contracts/actions/workflows/verify.yml)
 
 [Architecture](docs/ARCHITECTURE.md) · [Deployments](docs/DEPLOYMENTS.md) ·
-[Reproduce the build](docs/VERIFICATION.md) · [Technical paper](https://catch.exchange/paper) ·
+[Reproduce the build](docs/VERIFICATION.md) · [Technical paper](https://catch.exchange/paper?src=github) ·
 [Security](SECURITY.md)
 
 ## Review and testing
@@ -53,7 +53,7 @@ and compilation, not the private contract-test suite.
 | Check a live family or hook address | [Deployment directory](docs/DEPLOYMENTS.md) and [public identities](deployments/robinhood.json) |
 | Reproduce compiler outputs | [Verification guide](docs/VERIFICATION.md) |
 | Inspect review methodology and regression evidence | [Review and testing](docs/REVIEW_AND_TESTING.md) |
-| Understand release pricing and reserve claims | [Technical paper](https://catch.exchange/paper) |
+| Understand release pricing and reserve claims | [Technical paper](https://catch.exchange/paper?src=github) |
 | Contribute or report a problem | [Contributing](CONTRIBUTING.md) or [private security reporting](SECURITY.md) |
 
 ## Deployed on Robinhood Chain · 4663
@@ -152,8 +152,8 @@ differ. Issuers may retain controls. No future CATCH-token entitlement is define
 Source visibility allows inspection **and copying**, not anti-cloning protection.
 Unpublished launch material remains outside this repository.
 
-[Catch](https://catch.exchange) · [Markets](https://catch.exchange/markets) ·
-[Guides](https://catch.exchange/docs) · [Status](https://catch.exchange/status)
+[Catch](https://catch.exchange?src=github) · [Markets](https://catch.exchange/markets?src=github) ·
+[Guides](https://catch.exchange/docs?src=github) · [Status](https://catch.exchange/status?src=github)
 
 Original Catch sources are MIT; imported licences/attribution are preserved.
 See [LICENSE](LICENSE) and [NOTICE](NOTICE.md).
